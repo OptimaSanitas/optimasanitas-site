@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Optima Sanitas — health and fitness brand for Solana Mobile Seeker. Official hub for current and future Optima Sanitas apps, legal, and repos." />
+  <title>Optima Sanitas</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0a0d10;
+      --bg2: #12181f;
+      --text: #e8eaed;
+      --muted: #9aa0a6;
+      --accent: #4fe0b0;
+      --accent-dim: #2d8f6f;
+      --card: #151b22;
+      --border: #263041;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.55;
+      margin: 0;
+      min-height: 100vh;
+      background: radial-gradient(ellipse 120% 80% at 50% -20%, #1a2838 0%, var(--bg) 45%);
+      color: var(--text);
+    }
+    .wrap { max-width: 38rem; margin: 0 auto; padding: 2rem 1.25rem 3rem; }
+    header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.25rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .mark {
+      flex-shrink: 0;
+      width: 56px;
+      height: 56px;
+      border-radius: 14px;
+      background: linear-gradient(145deg, var(--accent) 0%, var(--accent-dim) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 32px rgba(79, 224, 176, 0.15);
+    }
+    .mark svg { display: block; }
+    .title-block h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin: 0 0 0.35rem;
+      color: var(--accent);
+    }
+    .title-block p {
+      margin: 0;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+    .disclaimer {
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin: 0 0 1.25rem;
+      padding: 0.65rem 0.85rem;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      line-height: 1.45;
+    }
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.25rem 1.35rem;
+      margin-bottom: 1rem;
+    }
+    section h2 {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin: 0 0 0.75rem;
+      font-weight: 600;
+    }
+    ul { list-style: none; padding: 0; margin: 0; }
+    li { margin: 0.65rem 0; }
+    li:first-child { margin-top: 0; }
+    li:last-child { margin-bottom: 0; }
+    .app-line { margin: 0.5rem 0 0.15rem; font-weight: 600; color: var(--text); }
+    .app-desc { margin: 0 0 0.85rem; font-size: 0.88rem; color: var(--muted); line-height: 1.45; }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    a:hover { text-decoration: underline; }
+    .external::after {
+      content: " ↗";
+      font-size: 0.85em;
+      opacity: 0.7;
+    }
+    footer {
+      margin-top: 2rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.8rem;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+    footer strong { color: #c4c7cc; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="mark" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+          <circle cx="17" cy="17" r="15" stroke="#0a0d10" stroke-width="2.5" opacity="0.35"/>
+          <path d="M17 4c-4 6-6 11-6 15 0 5 3 9 6 11 3-2 6-6 6-11 0-4-2-9-6-15z" fill="#0a0d10"/>
+          <ellipse cx="17" cy="14" rx="5" ry="8" fill="#0a0d10" opacity="0.5"/>
+        </svg>
+      </div>
+      <div class="title-block">
+        <h1>Optima Sanitas</h1>
+        <p><strong>Optima Sanitas</strong> is our health-and-fitness brand for Solana Mobile Seeker — one place for the line’s public face, legal HTML, and links as we add more apps over time.</p>
+      </div>
+    </header>
+
+    <p class="disclaimer">
+      <strong>Disclaimer:</strong> Entertainment and general wellness tooling only — not medical advice.
+      Use your clinician for personal health decisions.
+    </p>
+
+    <section aria-labelledby="apps-heading">
+      <h2 id="apps-heading">Apps</h2>
+      <p class="app-desc" style="margin-top:0;margin-bottom:1rem">Shipping today — additional Optima Sanitas titles will be listed here as they launch.</p>
+      <p class="app-line">Sanitas Seeker</p>
+      <p class="app-desc">
+        Our main health and exercise client for Seeker — training, fitness tracking, and LEV-related flows. On-chain program and policy sources are in the public <strong>lev-anchor</strong> repo; app source is <strong>lev-app</strong> (see Official).
+      </p>
+      <p class="app-line">Seeker Mobile Calc</p>
+      <p class="app-desc">
+        Scientific calculator plus a read-only Solana tab (MWA). A companion product under the same Optima Sanitas umbrella; store and in-app legal for this title are under <strong>calc/</strong> below.
+      </p>
+    </section>
+
+    <section aria-labelledby="legal-heading">
+      <h2 id="legal-heading">Legal documents — Seeker Mobile Calc</h2>
+      <ul>
+        <li><a href="calc/privacy.html">Privacy policy</a></li>
+        <li><a href="calc/terms.html">Terms of use</a></li>
+        <li><a href="calc/license.html">License (MIT)</a></li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="social-heading">
+      <h2 id="social-heading">Official</h2>
+      <ul>
+        <li><a class="external" href="https://x.com/optima_sanitas" rel="noopener noreferrer">X (@optima_sanitas)</a></li>
+        <li><a class="external" href="https://github.com/OptimaSanitas/lev-anchor" rel="noopener noreferrer">Public Anchor programs (lev-anchor)</a></li>
+        <li><a class="external" href="https://github.com/OptimaSanitas/lev-app" rel="noopener noreferrer">Sanitas Seeker app source (lev-app)</a></li>
+        <li><a class="external" href="https://github.com/OptimaSanitas/optimasanitas-site" rel="noopener noreferrer">This public site (optimasanitas-site)</a></li>
+      </ul>
+    </section>
+
+    <footer>
+      <p><strong>Canonical site for store and in-app listings:</strong> <code>https://optimasanitas.sol.site</code> (SNS <code>optimasanitas.sol</code> + Sol.site).</p>
+      <p style="margin-top:0.75rem">GitHub Pages mirror: <a href="https://optimasanitas.github.io/optimasanitas-site/">optimasanitas.github.io/optimasanitas-site</a>. Configure <strong>Sol.site</strong> (not only “Other records”) so <code>optimasanitas.sol.site</code> terminates on GitHub — see repo <code>README.md</code>.</p>
+    </footer>
+  </div>
+</body>
+</html>
