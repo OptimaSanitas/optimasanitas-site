@@ -90,6 +90,75 @@
     li:last-child { margin-bottom: 0; }
     .app-line { margin: 0.5rem 0 0.15rem; font-weight: 600; color: var(--text); }
     .app-desc { margin: 0 0 0.85rem; font-size: 0.88rem; color: var(--muted); line-height: 1.45; }
+    .app-intro { margin: 0 0 1rem; font-size: 0.95rem; color: var(--muted); line-height: 1.5; }
+    .app-grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: 1fr;
+    }
+    @media (min-width: 640px) {
+      .app-grid { grid-template-columns: 1fr 1fr; align-items: stretch; }
+    }
+    .app-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.15rem 1.2rem;
+      display: flex;
+      flex-direction: column;
+    }
+    .app-card h3 {
+      margin: 0 0 0.5rem;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--accent);
+      letter-spacing: -0.02em;
+    }
+    .app-card .app-desc { margin: 0 0 0.75rem; flex: 1; }
+    .legal-mini {
+      margin: 0;
+      padding-top: 0.85rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.82rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+    .legal-mini strong { color: #c4c7cc; font-weight: 600; }
+    .legal-mini a { font-weight: 600; margin-right: 0.35rem; }
+    .legal-intro {
+      margin: 0 0 1rem;
+      font-size: 0.88rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+    .legal-grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: 1fr;
+    }
+    @media (min-width: 640px) {
+      .legal-grid { grid-template-columns: 1fr 1fr; align-items: stretch; }
+    }
+    .legal-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.1rem 1.15rem;
+    }
+    .legal-card h3.legal-app-name {
+      margin: 0 0 0.5rem;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--accent);
+      letter-spacing: -0.02em;
+    }
+    .legal-card .legal-card-note {
+      margin: 0 0 0.75rem;
+      font-size: 0.82rem;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+    .legal-card ul { margin: 0; }
     a {
       color: var(--accent);
       text-decoration: none;
@@ -134,25 +203,59 @@
     </p>
 
     <section aria-labelledby="apps-heading">
-      <h2 id="apps-heading">Apps</h2>
-      <p class="app-desc" style="margin-top:0;margin-bottom:1rem">Shipping today — additional Optima Sanitas titles will be listed here as they launch.</p>
-      <p class="app-line">Sanitas Seeker</p>
-      <p class="app-desc">
-        Our main health and exercise client for Seeker — training, fitness tracking, and LEV-related flows. On-chain program and policy sources are in the public <strong>lev-anchor</strong> repo; app source is <strong>lev-app</strong> (see Official).
-      </p>
-      <p class="app-line">Seeker Mobile Calc</p>
-      <p class="app-desc">
-        Scientific calculator plus a read-only Solana tab (MWA). A companion product under the same Optima Sanitas umbrella; store and in-app legal for this title are under <strong>calc/</strong> below.
-      </p>
+      <h2 id="apps-heading">Apps on Seeker</h2>
+      <p class="app-intro">Two shipping titles today under the Optima Sanitas brand — each has its own legal HTML on this site for store listings and in-app links.</p>
+      <div class="app-grid">
+        <article class="app-card" aria-labelledby="app-seeker-title">
+          <h3 id="app-seeker-title">Sanitas Seeker</h3>
+          <p class="app-desc">
+            Main health and exercise client — training, fitness tracking, and LEV-related flows for <strong>Solana Mobile Seeker</strong>. On-chain programs live in public <strong>lev-anchor</strong>; application source in <strong>lev-app</strong> (see Official).
+          </p>
+          <p class="legal-mini"><strong>Legal</strong> —
+            <a href="sanitas-seeker/privacy.html">Privacy</a> ·
+            <a href="sanitas-seeker/terms.html">Terms</a> ·
+            <a href="sanitas-seeker/license.html">License</a>
+          </p>
+        </article>
+        <article class="app-card" aria-labelledby="app-calc-title">
+          <h3 id="app-calc-title">Seeker Mobile Calc</h3>
+          <p class="app-desc">
+            Scientific calculator plus a read-only Solana tab (MWA). Companion product under the same umbrella — wallet-assisted and explorer-style tooling without replacing clinical or financial advice.
+          </p>
+          <p class="legal-mini"><strong>Legal</strong> —
+            <a href="calc/privacy.html">Privacy</a> ·
+            <a href="calc/terms.html">Terms</a> ·
+            <a href="calc/license.html">License</a>
+          </p>
+        </article>
+      </div>
     </section>
 
     <section aria-labelledby="legal-heading">
-      <h2 id="legal-heading">Legal documents — Seeker Mobile Calc</h2>
-      <ul>
-        <li><a href="calc/privacy.html">Privacy policy</a></li>
-        <li><a href="calc/terms.html">Terms of use</a></li>
-        <li><a href="calc/license.html">License (MIT)</a></li>
-      </ul>
+      <h2 id="legal-heading">Legal documents</h2>
+      <p class="legal-intro">
+        <strong>Per-app policies.</strong> Sanitas Seeker and Seeker Mobile Calc each have their own privacy, terms, and license pages — use the correct path for store listings and in-app links (<code>sanitas-seeker/</code> vs <code>calc/</code>).
+      </p>
+      <div class="legal-grid">
+        <div class="legal-card">
+          <h3 class="legal-app-name" id="legal-card-seeker">Sanitas Seeker</h3>
+          <p class="legal-card-note">Privacy, terms, and license for the main Seeker fitness client.</p>
+          <ul aria-labelledby="legal-card-seeker">
+            <li><a href="sanitas-seeker/privacy.html">Privacy policy</a></li>
+            <li><a href="sanitas-seeker/terms.html">Terms of use</a></li>
+            <li><a href="sanitas-seeker/license.html">License (MIT)</a></li>
+          </ul>
+        </div>
+        <div class="legal-card">
+          <h3 class="legal-app-name" id="legal-card-calc">Seeker Mobile Calc</h3>
+          <p class="legal-card-note">Privacy, terms, and license for the calculator companion app.</p>
+          <ul aria-labelledby="legal-card-calc">
+            <li><a href="calc/privacy.html">Privacy policy</a></li>
+            <li><a href="calc/terms.html">Terms of use</a></li>
+            <li><a href="calc/license.html">License (MIT)</a></li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <section aria-labelledby="social-heading">
@@ -166,8 +269,8 @@
     </section>
 
     <footer>
-      <p><strong>Canonical site for store and in-app listings:</strong> <code>https://optimasanitas.sol.site</code> (SNS <code>optimasanitas.sol</code> + Sol.site).</p>
-      <p style="margin-top:0.75rem">GitHub Pages mirror: <a href="https://optimasanitas.github.io/optimasanitas-site/">optimasanitas.github.io/optimasanitas-site</a>. Configure <strong>Sol.site</strong> (not only “Other records”) so <code>optimasanitas.sol.site</code> terminates on GitHub — see repo <code>README.md</code>.</p>
+      <p><strong>Primary public URLs:</strong> SNS <code>optimasanitas.sol</code> — set the <strong>IPFS</strong> record on <a class="external" href="https://www.sns.id/">sns.id</a> (<code>ipfs://…</code>) after pinning the directory CID; open via any IPFS gateway (e.g. <code>https://ipfs.io/ipfs/&lt;CID&gt;</code>). <code>optimasanitas.sol.site</code> may still show the SNS profile unless Sol.site surfaces your IPFS record — verify in their UI/docs.</p>
+      <p style="margin-top:0.75rem"><strong>HTTPS mirror:</strong> <a href="https://optimasanitas.github.io/optimasanitas-site/">optimasanitas.github.io/optimasanitas-site</a> (GitHub Pages). Regenerate and re-pin IPFS when this changes; see repo <code>README.md</code>.</p>
     </footer>
   </div>
 </body>

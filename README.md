@@ -1,11 +1,84 @@
 # Optima Sanitas — public site (org-wide)
 
-This repository is the **canonical public web root** for the **Optima Sanitas** brand on Seeker: landing **`index.html`**, room for more apps over time, and **per-app legal HTML** in folders (today: **`calc/`** for Seeker Mobile Calc).
+This repository is the **canonical public web root** for the **Optima Sanitas** brand on Seeker: landing **`index.html`**, room for more apps over time, and **per-app legal HTML** in folders (**`sanitas-seeker/`**, **`calc/`**).
 
 It replaces using **`seeker-mobile-calc-legal`** as the main site repo — that name stays attached to the calculator only; this repo is the line hub.
 
-**Canonical HTTPS:** `https://optimasanitas.sol.site`  
-**GitHub Pages default URL:** `https://optimasanitas.github.io/optimasanitas-site/`
+**GitHub Pages (HTTPS mirror):** `https://optimasanitas.github.io/optimasanitas-site/`  
+**Firebase Hosting:** deploy from this repo — default URL `https://<PROJECT_ID>.web.app` (and `firebaseapp.com`). Good stable HTTPS if IPFS pinning signups are painful; point SNS **URL** record at your Firebase URL or custom domain.  
+**SNS / Sol.site:** Use **URL** + **IPFS** records on [sns.id](https://www.sns.id/) — see below. `*.sol.site` may keep showing the SNS profile unless Bonfida wires IPFS into that gateway; Brave [URL/CNAME resolution](https://docs.sns.id/collection/sns-v1/records#url-cname-records) and IPFS gateways still reach your content.
+
+---
+
+## Firebase Hosting
+
+Config lives in **`firebase.json`** (deploys **`index.html`**, **`calc/*.html`**, **`sanitas-seeker/*.html`** — ignores `.git`, **`scripts/`**, markdown, GitHub **`CNAME`**).
+
+1. Install CLI: `npm install -g firebase-tools`
+2. Log in: `firebase login`
+3. Link project (creates **`.firebaserc`**): from this folder run **`firebase use --add`** and pick your Firebase project (create one in the [Firebase console](https://console.firebase.google.com/) first if needed).
+4. Deploy: **`firebase deploy --only hosting`**
+5. Open **`https://<PROJECT_ID>.web.app`**, **`…/sanitas-seeker/privacy.html`**, and **`…/calc/privacy.html`**.
+
+Optional: **Hosting → Add custom domain** in Firebase console (DNS at your registrar). For SNS without a registrar, keep using the **`*.web.app`** URL in the **URL** record.
+
+---
+
+## IPFS for `optimasanitas.sol` (sns.id → Other records)
+
+### Local Kubo (this repo)
+
+1. **Install Kubo + init repo** (Linux `x86_64` / `aarch64`; installs `~/.local/bin/ipfs`, init `~/.ipfs`):
+
+   ```bash
+   chmod +x scripts/ipfs-install-kubo.sh scripts/ipfs-stage-and-add.sh
+   ./scripts/ipfs-install-kubo.sh
+   ```
+
+2. **Add and pin the staged site** (prints root CID and `ipfs://…` for sns.id):
+
+   ```bash
+   ./scripts/ipfs-stage-and-add.sh
+   ```
+
+3. **Optional — serve the network** so gateways can find blocks while this machine is online (opens swarm ports; check firewall):
+
+   ```bash
+   ipfs daemon
+   ```
+
+   For always-on publishing, run the daemon under **systemd --user**, or use a **remote pin** below so you do not depend on your laptop.
+
+### Manual staging (same layout)
+
+1. **Build a clean folder** of exactly what you serve (no `.git`):
+
+   ```bash
+   STAGE=/tmp/optimasanitas-ipfs-stage
+   rm -rf "$STAGE" && mkdir -p "$STAGE/calc" "$STAGE/sanitas-seeker"
+   cp index.html "$STAGE/"
+   cp calc/*.html "$STAGE/calc/"
+   cp sanitas-seeker/*.html "$STAGE/sanitas-seeker/"
+   ```
+
+2. **Produce a directory CID** with Kubo:
+
+   ```bash
+   ipfs add -r -Q --cid-version=1 "$STAGE"
+   ipfs pin add <CID>
+   ```
+
+   After adding **`sanitas-seeker/`**, **regenerate** the CID with the commands above (do not rely on an old example hash).
+
+3. **Pin the CID** on a public pin layer so gateways can load it when your node is off (pick one): [Pinata](https://pinata.cloud/), [Filebase](https://filebase.com/), [Storacha](https://web3.storage/pricing/), or keep **`ipfs daemon`** running on a reachable node.
+
+4. **sns.id** → domain → **Other records** → **IPFS:** enter **`ipfs://bafybei…`** (same CID as above, with the `ipfs://` prefix per the form).
+
+5. **Optional:** set a **URL** record to `https://optimasanitas.github.io/optimasanitas-site/` for resolvers that prefer HTTPS ([records doc](https://docs.sns.id/collection/sns-v1/records#url-cname-records)).
+
+6. **Smoke test:** open `https://ipfs.io/ipfs/<CID>/`, `…/sanitas-seeker/privacy.html`, and `…/calc/privacy.html` after pinning.
+
+**Note:** SNS **CNAME** to `*.github.io` requires DNS proof on a zone **you** control; use **URL** for GitHub instead. IPFS does not replace pinning — unpinned CIDs are effectively unavailable.
 
 ---
 
@@ -32,7 +105,7 @@ It replaces using **`seeker-mobile-calc-legal`** as the main site repo — that 
 
 6. Confirm in a browser:
    - Title **Optima Sanitas** at `https://optimasanitas.sol.site/`
-   - `https://optimasanitas.sol.site/calc/privacy.html` (and terms, license) return **200**
+   - `https://optimasanitas.sol.site/sanitas-seeker/privacy.html` and `…/calc/privacy.html` (and related legal paths) return **200**
 
 7. **Then** ship **SeekerMobileCalc** (and any other clients) that use **`/calc/...`** legal URLs — see `src/config/legal.ts`. Until step 4–6 are done, those URLs 404 on `optimasanitas.sol.site`.
 
@@ -45,10 +118,11 @@ It replaces using **`seeker-mobile-calc-legal`** as the main site repo — that 
 | Path | Role |
 |------|------|
 | **`index.html`** | Brand hub for all Optima Sanitas apps |
-| **`calc/*.html`** | Store / in-app legal for **Seeker Mobile Calc** only |
-| *(future)* **`…/`** | Add folders or pages for other apps as you ship them |
+| **`sanitas-seeker/*.html`** | Store / in-app legal for **Sanitas Seeker** |
+| **`calc/*.html`** | Store / in-app legal for **Seeker Mobile Calc** |
+| *(future)* **`…/`** | Add folders for additional apps as you ship them |
 
-Mobile apps should keep **`OPTIMA_PUBLIC_SITE`** = `https://optimasanitas.sol.site` and use **`/calc/...`** for Calc legal URLs (see **SeekerMobileCalc** `src/config/legal.ts`).
+For store / in-app legal URLs today, prefer a **stable HTTPS origin** you control (**Firebase** `https://<PROJECT_ID>.web.app`, **`https://optimasanitas.github.io/optimasanitas-site`**, or a pinned IPFS gateway URL like `https://ipfs.io/ipfs/<CID>`). **`optimasanitas.sol.site`** is fine as branding only if Sol.site still serves the profile UI after you set IPFS — confirm behavior before wiring **`OPTIMA_PUBLIC_SITE`** (see **SeekerMobileCalc** `src/config/legal.ts`).
 
 ---
 
