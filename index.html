@@ -10,192 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet" />
-  <style>
-    :root {
-      color-scheme: dark;
-      /* Pulled from Sanitas app icon: midnight teal, DNA cyan, laurel greens */
-      --bg-deep: #02080c;
-      --bg: #051015;
-      --bg-soft: #0a1820;
-      --surface: rgba(8, 28, 36, 0.82);
-      --text: #e8f4fc;
-      --text-soft: #9ec4d0;
-      --cyan: #00d4ff;
-      --cyan-soft: #5ee0ff;
-      --cyan-dim: #0099b8;
-      --green: #2d6a45;
-      --green-bright: #4a9d6a;
-      --sage: #7aab7e;
-      --border: rgba(0, 212, 255, 0.22);
-      --glow-cyan: rgba(0, 212, 255, 0.18);
-      --glow-green: rgba(74, 157, 106, 0.12);
-      --radius-lg: 22px;
-      --radius-md: 14px;
-    }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      min-height: 100vh;
-      font-family: "Inter", system-ui, sans-serif;
-      font-weight: 400;
-      color: var(--text);
-      line-height: 1.6;
-      background:
-        radial-gradient(ellipse 100% 80% at 50% -20%, var(--glow-cyan) 0%, transparent 55%),
-        radial-gradient(ellipse 70% 50% at 90% 60%, var(--glow-green) 0%, transparent 50%),
-        linear-gradient(180deg, var(--bg-soft) 0%, var(--bg) 45%, var(--bg-deep) 100%);
-    }
-    .shell {
-      max-width: 52rem;
-      margin: 0 auto;
-      padding: clamp(1.5rem, 4vw, 2.75rem) clamp(1.1rem, 3vw, 1.75rem) clamp(2.5rem, 5vw, 3.5rem);
-    }
-    .hero {
-      text-align: center;
-      padding: clamp(1.25rem, 3vw, 2rem) 0 clamp(2rem, 4vw, 2.75rem);
-      border-bottom: 1px solid var(--border);
-      margin-bottom: clamp(1.75rem, 4vw, 2.5rem);
-    }
-    .logo-wrap {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 1.35rem;
-      padding: 0.35rem;
-      border-radius: 26%;
-      background: radial-gradient(circle at 30% 25%, rgba(0, 212, 255, 0.12) 0%, transparent 55%),
-        linear-gradient(145deg, rgba(45, 106, 69, 0.35) 0%, rgba(5, 16, 21, 0.9) 100%);
-      border: 1px solid rgba(0, 212, 255, 0.28);
-      box-shadow: 0 12px 48px rgba(0, 212, 255, 0.12), 0 0 0 1px rgba(74, 157, 106, 0.15);
-    }
-    .logo-wrap img {
-      display: block;
-      width: clamp(100px, 22vw, 132px);
-      height: auto;
-      border-radius: 22%;
-      object-fit: contain;
-    }
-    h1 {
-      font-family: "Montserrat", system-ui, sans-serif;
-      font-weight: 700;
-      font-size: clamp(2rem, 5vw, 2.75rem);
-      letter-spacing: -0.02em;
-      line-height: 1.15;
-      margin: 0 0 0.5rem;
-      background: linear-gradient(105deg, var(--cyan-soft) 0%, var(--sage) 55%, var(--cyan) 100%);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-      text-shadow: 0 0 48px rgba(0, 212, 255, 0.2);
-    }
-    .tagline {
-      font-family: "Montserrat", system-ui, sans-serif;
-      font-weight: 500;
-      font-size: clamp(1.15rem, 2.8vw, 1.42rem);
-      color: var(--text-soft);
-      max-width: 38rem;
-      margin: 0 auto 1.25rem;
-      line-height: 1.55;
-    }
-    .tagline strong { color: var(--text); font-weight: 600; }
-    .wellness-note {
-      font-size: 0.9rem;
-      color: var(--text-soft);
-      max-width: 32rem;
-      margin: 0 auto;
-      padding: 0.75rem 1rem;
-      background: var(--surface);
-      border: 1px solid rgba(74, 157, 106, 0.35);
-      border-radius: var(--radius-md);
-      backdrop-filter: blur(8px);
-    }
-    .wellness-note strong { color: var(--green-bright); font-weight: 600; }
-    h2.section-title {
-      font-family: "Montserrat", system-ui, sans-serif;
-      font-size: 0.78rem;
-      font-weight: 600;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--sage);
-      margin: 0 0 1rem;
-      text-align: center;
-    }
-    .app-grid {
-      display: grid;
-      gap: 1.25rem;
-      grid-template-columns: 1fr;
-    }
-    @media (min-width: 640px) {
-      .app-grid { grid-template-columns: 1fr 1fr; }
-    }
-    .app-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      padding: 1.5rem 1.4rem;
-      display: flex;
-      flex-direction: column;
-      backdrop-filter: blur(10px);
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
-      transition: border-color 0.2s, box-shadow 0.2s;
-    }
-    .app-card:hover {
-      border-color: rgba(0, 212, 255, 0.4);
-      box-shadow: 0 12px 40px rgba(0, 212, 255, 0.08);
-    }
-    .app-card h3 {
-      font-family: "Montserrat", system-ui, sans-serif;
-      font-size: 1.25rem;
-      font-weight: 700;
-      margin: 0 0 0.65rem;
-      color: var(--cyan-soft);
-    }
-    .app-card p {
-      margin: 0 0 1rem;
-      font-size: 0.95rem;
-      color: var(--text-soft);
-      line-height: 1.55;
-      flex: 1;
-    }
-    .app-card .legal-row {
-      margin: 0;
-      padding-top: 1rem;
-      border-top: 1px solid rgba(0, 212, 255, 0.15);
-      font-size: 0.88rem;
-      font-weight: 500;
-    }
-    .app-card .legal-row a { margin-right: 0.35rem; }
-    a {
-      color: var(--cyan);
-      text-decoration: none;
-      font-weight: 500;
-    }
-    a:hover { text-decoration: underline; color: var(--cyan-soft); }
-    .external::after {
-      content: " ↗";
-      font-size: 0.82em;
-      opacity: 0.65;
-    }
-    .official {
-      margin-top: clamp(2rem, 4vw, 2.75rem);
-      padding: 1.5rem 1.35rem;
-      background: var(--surface);
-      border: 1px solid rgba(74, 157, 106, 0.3);
-      border-radius: var(--radius-lg);
-      backdrop-filter: blur(10px);
-    }
-    .official h2 {
-      font-family: "Montserrat", system-ui, sans-serif;
-      font-size: 1rem;
-      font-weight: 700;
-      color: var(--cyan-soft);
-      margin: 0 0 0.85rem;
-    }
-    .official ul { list-style: none; padding: 0; margin: 0; }
-    .official li { margin: 0.55rem 0; font-size: 0.98rem; }
-    .official li:first-child { margin-top: 0; }
-  </style>
+  <link rel="stylesheet" href="assets/site-theme.css" />
 </head>
 <body>
   <div class="shell">
@@ -223,7 +38,8 @@
         <p class="legal-row">
           <a href="sanitas-seeker/privacy.html">Privacy</a> ·
           <a href="sanitas-seeker/terms.html">Terms</a> ·
-          <a href="sanitas-seeker/license.html">License</a>
+          <a href="sanitas-seeker/license.html">License</a> ·
+          <a href="sanitas-seeker/copyright.html">Copyright</a>
         </p>
       </article>
       <article class="app-card">
@@ -234,7 +50,8 @@
         <p class="legal-row">
           <a href="calc/privacy.html">Privacy</a> ·
           <a href="calc/terms.html">Terms</a> ·
-          <a href="calc/license.html">License</a>
+          <a href="calc/license.html">License</a> ·
+          <a href="calc/copyright.html">Copyright</a>
         </p>
       </article>
     </div>
@@ -242,6 +59,7 @@
     <section class="official" aria-labelledby="official-h">
       <h2 id="official-h">Connect</h2>
       <ul>
+        <li><a href="legal.html">Legal hub (all policies)</a></li>
         <li><a class="external" href="https://x.com/optima_sanitas" rel="noopener noreferrer">X (@optima_sanitas)</a></li>
         <li><a class="external" href="https://github.com/OptimaSanitas/lev-anchor" rel="noopener noreferrer">Anchor programs (lev-anchor)</a></li>
         <li><a class="external" href="https://github.com/OptimaSanitas/lev-app" rel="noopener noreferrer">Sanitas Seeker source (lev-app)</a></li>

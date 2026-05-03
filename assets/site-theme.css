@@ -1,0 +1,390 @@
+/* Optima Sanitas public hub + legal pages — midnight teal, DNA cyan, laurel greens */
+:root {
+  color-scheme: dark;
+  --bg-deep: #02080c;
+  --bg: #051015;
+  --bg-soft: #0a1820;
+  --surface: rgba(8, 28, 36, 0.82);
+  --text: #e8f4fc;
+  --text-soft: #9ec4d0;
+  --cyan: #00d4ff;
+  --cyan-soft: #5ee0ff;
+  --cyan-dim: #0099b8;
+  --green: #2d6a45;
+  --green-bright: #4a9d6a;
+  --sage: #7aab7e;
+  --border: rgba(0, 212, 255, 0.22);
+  --glow-cyan: rgba(0, 212, 255, 0.18);
+  --glow-green: rgba(74, 157, 106, 0.12);
+  --radius-lg: 22px;
+  --radius-md: 14px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Inter", system-ui, sans-serif;
+  font-weight: 400;
+  color: var(--text);
+  line-height: 1.6;
+  background:
+    radial-gradient(ellipse 100% 80% at 50% -20%, var(--glow-cyan) 0%, transparent 55%),
+    radial-gradient(ellipse 70% 50% at 90% 60%, var(--glow-green) 0%, transparent 50%),
+    linear-gradient(180deg, var(--bg-soft) 0%, var(--bg) 45%, var(--bg-deep) 100%);
+}
+
+.shell {
+  max-width: 52rem;
+  margin: 0 auto;
+  padding: clamp(1.5rem, 4vw, 2.75rem) clamp(1.1rem, 3vw, 1.75rem) clamp(2.5rem, 5vw, 3.5rem);
+}
+
+.hero {
+  text-align: center;
+  padding: clamp(1.25rem, 3vw, 2rem) 0 clamp(2rem, 4vw, 2.75rem);
+  border-bottom: 1px solid var(--border);
+  margin-bottom: clamp(1.75rem, 4vw, 2.5rem);
+}
+
+.hero--compact {
+  padding: clamp(1rem, 2.5vw, 1.5rem) 0 clamp(1.25rem, 3vw, 1.75rem);
+  margin-bottom: clamp(1.25rem, 3vw, 1.75rem);
+}
+
+.hero--compact .logo-wrap {
+  margin-bottom: 0.75rem;
+}
+
+.hero--compact .logo-wrap img {
+  width: clamp(72px, 16vw, 96px);
+}
+
+.logo-wrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.35rem;
+  padding: 0.35rem;
+  border-radius: 26%;
+  background:
+    radial-gradient(circle at 30% 25%, rgba(0, 212, 255, 0.12) 0%, transparent 55%),
+    linear-gradient(145deg, rgba(45, 106, 69, 0.35) 0%, rgba(5, 16, 21, 0.9) 100%);
+  border: 1px solid rgba(0, 212, 255, 0.28);
+  box-shadow: 0 12px 48px rgba(0, 212, 255, 0.12), 0 0 0 1px rgba(74, 157, 106, 0.15);
+}
+
+a.logo-wrap {
+  text-decoration: none;
+}
+
+.logo-wrap img {
+  display: block;
+  width: clamp(100px, 22vw, 132px);
+  height: auto;
+  border-radius: 22%;
+  object-fit: contain;
+}
+
+h1 {
+  font-family: "Montserrat", system-ui, sans-serif;
+  font-weight: 700;
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  margin: 0 0 0.5rem;
+  background: linear-gradient(105deg, var(--cyan-soft) 0%, var(--sage) 55%, var(--cyan) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 48px rgba(0, 212, 255, 0.2);
+}
+
+.tagline {
+  font-family: "Montserrat", system-ui, sans-serif;
+  font-weight: 500;
+  font-size: clamp(1.15rem, 2.8vw, 1.42rem);
+  color: var(--text-soft);
+  max-width: 38rem;
+  margin: 0 auto 1.25rem;
+  line-height: 1.55;
+}
+
+.tagline strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.tagline--compact {
+  font-size: 0.92rem;
+  max-width: 28rem;
+  margin: 0.35rem auto 0;
+}
+
+.brand-home {
+  font-family: "Montserrat", system-ui, sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.15rem, 2.8vw, 1.45rem);
+  letter-spacing: -0.02em;
+  margin: 0 0 0.35rem;
+  background: linear-gradient(105deg, var(--cyan-soft) 0%, var(--sage) 55%, var(--cyan) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.brand-home a {
+  color: inherit;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.brand-home a:hover {
+  text-decoration: underline;
+}
+
+.wellness-note {
+  font-size: 0.9rem;
+  color: var(--text-soft);
+  max-width: 32rem;
+  margin: 0 auto;
+  padding: 0.75rem 1rem;
+  background: var(--surface);
+  border: 1px solid rgba(74, 157, 106, 0.35);
+  border-radius: var(--radius-md);
+  backdrop-filter: blur(8px);
+}
+
+.wellness-note strong {
+  color: var(--green-bright);
+  font-weight: 600;
+}
+
+h2.section-title {
+  font-family: "Montserrat", system-ui, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--sage);
+  margin: 0 0 1rem;
+  text-align: center;
+}
+
+.app-grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .app-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.app-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.app-card:hover {
+  border-color: rgba(0, 212, 255, 0.4);
+  box-shadow: 0 12px 40px rgba(0, 212, 255, 0.08);
+}
+
+.app-card h3 {
+  font-family: "Montserrat", system-ui, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0 0 0.65rem;
+  color: var(--cyan-soft);
+}
+
+.app-card p {
+  margin: 0 0 1rem;
+  font-size: 0.95rem;
+  color: var(--text-soft);
+  line-height: 1.55;
+  flex: 1;
+}
+
+.app-card .legal-row {
+  margin: 0;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(0, 212, 255, 0.15);
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+
+.app-card .legal-row a {
+  margin-right: 0.35rem;
+}
+
+a,
+a:link,
+a:visited {
+  color: var(--cyan);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--cyan-soft);
+}
+
+.external::after {
+  content: " ↗";
+  font-size: 0.82em;
+  opacity: 0.65;
+}
+
+.official {
+  margin-top: clamp(2rem, 4vw, 2.75rem);
+  padding: 1.5rem 1.35rem;
+  background: var(--surface);
+  border: 1px solid rgba(74, 157, 106, 0.3);
+  border-radius: var(--radius-lg);
+  backdrop-filter: blur(10px);
+}
+
+.official h2 {
+  font-family: "Montserrat", system-ui, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--cyan-soft);
+  margin: 0 0 0.85rem;
+}
+
+.official ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.official li {
+  margin: 0.55rem 0;
+  font-size: 0.98rem;
+}
+
+.official li:first-child {
+  margin-top: 0;
+}
+
+/* ——— Legal document pages (privacy, terms, license, copyright) ——— */
+main.legal-doc {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 0 0 clamp(1.5rem, 3vw, 2.5rem);
+}
+
+main.legal-doc h1 {
+  font-family: "Montserrat", system-ui, sans-serif;
+  font-size: clamp(1.2rem, 3vw, 1.6rem);
+  font-weight: 700;
+  color: var(--cyan-soft);
+  margin: 0 0 0.75rem;
+  line-height: 1.25;
+  background: none;
+  -webkit-background-clip: unset;
+  background-clip: unset;
+  text-shadow: none;
+}
+
+main.legal-doc h2 {
+  font-family: "Montserrat", system-ui, sans-serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--sage);
+  margin-top: 1.65rem;
+  margin-bottom: 0.45rem;
+}
+
+main.legal-doc h2:first-of-type {
+  margin-top: 1.1rem;
+}
+
+main.legal-doc p,
+main.legal-doc li {
+  color: var(--text-soft);
+  font-size: 0.95rem;
+}
+
+main.legal-doc p,
+main.legal-doc ul,
+main.legal-doc ol {
+  margin: 0.5rem 0;
+}
+
+main.legal-doc ul,
+main.legal-doc ol {
+  padding-left: 1.25rem;
+}
+
+main.legal-doc .muted {
+  color: var(--text-soft);
+  opacity: 0.9;
+  font-size: 0.88rem;
+}
+
+main.legal-doc pre {
+  white-space: pre-wrap;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, monospace;
+  font-size: 0.86rem;
+  line-height: 1.55;
+  background: var(--surface);
+  padding: 1.1rem 1.15rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  color: var(--text);
+  margin: 1rem 0;
+}
+
+main.legal-doc strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.legal-nav {
+  margin-top: 1.75rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(0, 212, 255, 0.15);
+  font-size: 0.88rem;
+}
+
+.footer-site {
+  text-align: center;
+  padding: 1.75rem 0 0;
+  margin-top: 2rem;
+  border-top: 1px solid var(--border);
+  color: var(--text-soft);
+  font-size: 0.85rem;
+}
+
+/* Legal hub: stack of link cards */
+.legal-hub-grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .legal-hub-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
