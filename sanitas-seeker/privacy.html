@@ -3,44 +3,124 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Seeker Mobile Calc — Privacy Policy</title>
+  <title>Sanitas Seeker — Privacy Policy</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
     body { font-family: 'Inter', system-ui; background: #0A0A0A; color: #E0E0E0; margin: 0; padding: 0; line-height: 1.6; }
-    .header { background: #1E1E1E; padding: 20px; text-align: center; border-bottom: 3px solid #00FF9D; }
-    .logo { height: 80px; margin-bottom: 10px; }
+    .header { background: #1E1E1E; padding: 40px 20px; text-align: center; border-bottom: 4px solid #00FF9D; }
+    .logo { height: 100px; margin-bottom: 15px; }
     .container { max-width: 720px; margin: 40px auto; padding: 0 20px; }
-    h1 { color: #00FF9D; font-size: 28px; }
-    h2 { color: #00FF9D; margin-top: 2em; font-size: 22px; }
+    .app { background: #1E1E1E; padding: 24px; border-radius: 16px; margin: 20px 0; border: 1px solid #00FF9D; }
+    h1 { color: #00FF9D; font-size: 32px; }
+    h2 { color: #00FF9D; font-size: 24px; margin-top: 1.75em; }
+    h3 { color: #00FF9D; font-size: 18px; margin-top: 1.25em; font-weight: 600; }
     a { color: #00FF9D; text-decoration: none; }
     a:hover { text-decoration: underline; }
-    .footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid #333; text-align: center; font-size: 14px; color: #888; }
+    ul { padding-left: 1.25rem; }
+    code { background: #1E1E1E; padding: 2px 6px; border-radius: 6px; font-size: 0.9em; }
+    .legal-note { font-size: 14px; color: #888; margin-top: 2rem; line-height: 1.5; }
+    .footer { margin-top: 80px; padding-top: 30px; border-top: 1px solid #333; text-align: center; font-size: 14px; color: #888; }
   </style>
 </head>
 <body>
   <div class="header">
     <img src="https://i.imgur.com/0fK9vL2.png" alt="Optima Sanitas Logo" class="logo">
     <h1>Optima Sanitas</h1>
+    <p>Health-and-fitness apps for Solana Mobile Seeker</p>
   </div>
   <div class="container">
-    <h1>Seeker Mobile Calc — Privacy Policy</h1>
-    <p><strong>Last updated:</strong> May 03, 2026 · Operator: Optima Sanitas</p>
-    <p>Seeker Mobile Calc is a scientific calculator for Solana Mobile Seeker with optional Solana read-only tools.</p>
+    <h1>Sanitas Seeker Privacy Policy</h1>
+    <div class="app">
+      <p><strong>Last Updated: April 19, 2026</strong></p>
+    </div>
 
-    <h2>What we do not collect</h2>
-    <p>No accounts, no login, no analytics SDK. All expressions and history stay on your device unless you manually copy them.</p>
+    <h2>Introduction</h2>
+    <p>Sanitas Seeker (&ldquo;we&rdquo;, &ldquo;us&rdquo;, or &ldquo;our&rdquo;) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application (the &ldquo;App&rdquo;) on Solana Seeker devices, including sprint interval training tracking, optional on-chain SKE-Claim pool rewards (SKR) when enabled—not guaranteed or on a fixed daily schedule, daily longevity/news threads, and related features.</p>
+    <p>By using the App, you consent to the data practices described in this policy.</p>
 
-    <h2>What the App may use or display</h2>
-    <p>1. Public Solana RPC calls (slot, balance, transactions).<br>
-       2. Optional wallet connection via Mobile Wallet Adapter (you sign; keys stay in Seed Vault).<br>
-       3. Optional public quote API (no wallet data sent).</p>
+    <h2>Information We Collect</h2>
+    <h3>1. Personal &amp; Fitness Data</h3>
+    <ul>
+      <li><strong>Exercise Metrics</strong>: Distance walked/ran (GPS), sets completed, speed, accelerometer data (for movement detection fusion), calories burned (estimated).</li>
+      <li><strong>Workout History</strong>: Timestamps, phase durations, total progress stored locally and logged on-chain via <code>log_workout</code> and <code>update_fitness_stats</code> instructions.</li>
+      <li><strong>SBT Data</strong>: Soulbound Token metadata (labels, version, is_early/Legend status) stored on-chain.</li>
+    </ul>
 
-    <h2>On-chain data</h2>
-    <p>Blockchain data is public by design. We do not delete on-chain records.</p>
+    <h3>2. Location Data (GPS)</h3>
+    <p>Precise location (latitude/longitude) is collected <strong>only during active workout sessions</strong> for accurate distance tracking in sprint intervals. Location permission is requested at runtime. We do <strong>not</strong> track location in the background or when the App is closed. Data is processed locally on-device for real-time speed/distance and sent on-chain only as aggregated workout summaries.</p>
 
-    <h2>Contact</h2>
-    <p>X (@optima_sanitas) or optimasanitas@atomicmail.io<br>
-    <a href="https://optimasanitas.sol.site">Official Site</a></p>
+    <h3>3. Wallet &amp; On-Chain Data</h3>
+    <ul>
+      <li>Solana wallet address and public key (via Mobile Wallet Adapter / Seed Vault).</li>
+      <li>Transaction signatures for daily micro-rewards (<code>claim_daily_reward</code>), SBT minting (<code>mint_sbt</code>), and SKR claims.</li>
+      <li>On-chain account data (UserExerciseState, SbtAccount, etc.) is publicly visible on Solana explorers.</li>
+    </ul>
+
+    <h3>4. Device &amp; Usage Data</h3>
+    <ul>
+      <li>Device model (Solana Seeker), OS version, app version.</li>
+      <li>App usage analytics (screens visited, workout completion rates) — stored locally only.</li>
+      <li>No cookies or cross-app tracking.</li>
+    </ul>
+
+    <h3>5. News &amp; Social Data</h3>
+    <ul>
+      <li>Daily issue content (workout video URLs, text, optional persona image, optional outbound links) resolved from the on-chain PDA (<code>daily-news-seeker-final</code>) and static URLs you configure (e.g. Arweave). No X/Twitter account data is collected in the app.</li>
+      <li>No personal X account data is collected or stored.</li>
+    </ul>
+
+    <h2>How We Use Your Information</h2>
+    <ul>
+      <li><strong>Core Functionality</strong>: Enable accurate sprint interval training, GPS distance tracking, and real-time phase transitions (walk → run → walk).</li>
+      <li><strong>On-Chain Rewards</strong>: Verify Seeker Genesis NFT ownership, log workouts, and, when the admin enables claims and the pool is funded, distribute SKR from the SKE-Claim pool (program pool; no promise of a daily amount or schedule).</li>
+      <li><strong>SBT Minting &amp; Legend System</strong>: Create and update personal Soulbound Tokens with your fitness achievements and optional paid Legend extensions.</li>
+      <li><strong>News Feed</strong>: Deliver curated longevity content directly from the on-chain daily news PDA.</li>
+      <li><strong>Improvement</strong>: Analyze aggregated (anonymized) workout trends to improve interval recommendations (future LEVHealth integration).</li>
+    </ul>
+
+    <h2>Data Sharing &amp; Disclosure</h2>
+    <ul>
+      <li><strong>On-Chain Public Data</strong>: All workout logs, SBTs, and reward claims are permanently recorded on the Solana blockchain and viewable by anyone via explorers (Solscan, etc.).</li>
+      <li><strong>No Third-Party Selling</strong>: We never sell your personal data.</li>
+      <li><strong>Service Providers</strong>: Minimal — only Solana RPC nodes (Helius devnet/mainnet) for transaction submission. No analytics SDKs (Firebase, etc.) are used.</li>
+      <li><strong>Legal Requirements</strong>: We may disclose information if required by law, court order, or to protect our rights.</li>
+    </ul>
+
+    <h2>Data Security</h2>
+    <ul>
+      <li>All sensitive operations (wallet signing, transaction building) occur inside the secure Seed Vault on the Seeker phone.</li>
+      <li>No private keys ever leave the device.</li>
+      <li>On-device data (AsyncStorage, Redux) is encrypted at rest where possible.</li>
+      <li>On-chain data is immutable by design.</li>
+    </ul>
+
+    <h2>Your Rights &amp; Choices</h2>
+    <ul>
+      <li><strong>Delete Data</strong>: You can reset your local progress in Settings. On-chain data (SBTs, workout history) cannot be deleted due to blockchain immutability.</li>
+      <li><strong>Opt-Out of Rewards</strong>: Toggle &ldquo;Rewards Enabled&rdquo; off in Settings (calls <code>toggle_rewards</code> instruction).</li>
+      <li><strong>Location Permission</strong>: Revoke GPS access anytime in phone settings. Workout tracking will be disabled.</li>
+      <li><strong>Wallet Disconnect</strong>: Use the built-in disconnect button — clears Redux state only.</li>
+    </ul>
+
+    <h2>Children's Privacy</h2>
+    <p>The App is not intended for children under 18. We do not knowingly collect data from minors.</p>
+
+    <h2>Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. Material changes will be announced via the in-app news feed (on-chain <code>update_daily_news</code> instruction). Continued use after changes constitutes acceptance.</p>
+
+    <h2>Contact Us</h2>
+    <p>For privacy questions, data requests, or to report issues:</p>
+    <p><strong>Optima Sanitas Legal Team</strong><br />
+    Email: <a href="mailto:privacy@optimasanitas.com">privacy@optimasanitas.com</a><br />
+    X: <a href="https://x.com/optima_sanitas">@optima_sanitas</a><br />
+    On-chain Program: <code>AwZRzJmcbRx3weqFXUi3MWhaEsS6a7GjvkCJH2DUTkhN</code></p>
+
+    <p>See also: <a href="terms.html">Terms of Use</a> · <a href="https://github.com/OptimaSanitas/lev-anchor/blob/main/docs/PRIVACY_POLICY.md">Source markdown (repository)</a></p>
+
+    <p class="legal-note">Hosted for compliance via GitHub Pages from the <code>lev-anchor</code> repository <code>/docs</code> folder. Canonical policy text may also appear in the <code>lev-app</code> repository under <code>docs/</code>.</p>
+
+    <h2>Legal</h2>
+    <p><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Use</a> · <a href="license.html">License</a> · <a href="copyright.html">Copyright</a> · <a href="../index.html">Site home</a></p>
 
     <div class="footer">
       © 2026 Optima Sanitas · All rights reserved
