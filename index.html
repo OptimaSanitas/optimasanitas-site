@@ -1,253 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Optima Sanitas — health and fitness for Solana Mobile Seeker. Official hub for apps, legal pages, and community links." />
-  <title>Optima Sanitas</title>
-  <link rel="icon" href="assets/brand-icon.png" type="image/png" />
-  <link rel="apple-touch-icon" href="assets/brand-icon.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Optima Sanitas — Solana Mobile Seeker Health</title>
   <style>
-    :root {
-      color-scheme: dark;
-      /* Pulled from Sanitas app icon: midnight teal, DNA cyan, laurel greens */
-      --bg-deep: #02080c;
-      --bg: #051015;
-      --bg-soft: #0a1820;
-      --surface: rgba(8, 28, 36, 0.82);
-      --text: #e8f4fc;
-      --text-soft: #9ec4d0;
-      --cyan: #00d4ff;
-      --cyan-soft: #5ee0ff;
-      --cyan-dim: #0099b8;
-      --green: #2d6a45;
-      --green-bright: #4a9d6a;
-      --sage: #7aab7e;
-      --border: rgba(0, 212, 255, 0.22);
-      --glow-cyan: rgba(0, 212, 255, 0.18);
-      --glow-green: rgba(74, 157, 106, 0.12);
-      --radius-lg: 22px;
-      --radius-md: 14px;
-    }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      min-height: 100vh;
-      font-family: "Inter", system-ui, sans-serif;
-      font-weight: 400;
-      color: var(--text);
-      line-height: 1.6;
-      background:
-        radial-gradient(ellipse 100% 80% at 50% -20%, var(--glow-cyan) 0%, transparent 55%),
-        radial-gradient(ellipse 70% 50% at 90% 60%, var(--glow-green) 0%, transparent 50%),
-        linear-gradient(180deg, var(--bg-soft) 0%, var(--bg) 45%, var(--bg-deep) 100%);
-    }
-    .shell {
-      max-width: 52rem;
-      margin: 0 auto;
-      padding: clamp(1.5rem, 4vw, 2.75rem) clamp(1.1rem, 3vw, 1.75rem) clamp(2.5rem, 5vw, 3.5rem);
-    }
-    .hero {
-      text-align: center;
-      padding: clamp(1.25rem, 3vw, 2rem) 0 clamp(2rem, 4vw, 2.75rem);
-      border-bottom: 1px solid var(--border);
-      margin-bottom: clamp(1.75rem, 4vw, 2.5rem);
-    }
-    .logo-wrap {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 1.35rem;
-      padding: 0.35rem;
-      border-radius: 26%;
-      background: radial-gradient(circle at 30% 25%, rgba(0, 212, 255, 0.12) 0%, transparent 55%),
-        linear-gradient(145deg, rgba(45, 106, 69, 0.35) 0%, rgba(5, 16, 21, 0.9) 100%);
-      border: 1px solid rgba(0, 212, 255, 0.28);
-      box-shadow: 0 12px 48px rgba(0, 212, 255, 0.12), 0 0 0 1px rgba(74, 157, 106, 0.15);
-    }
-    .logo-wrap img {
-      display: block;
-      width: clamp(100px, 22vw, 132px);
-      height: auto;
-      border-radius: 22%;
-      object-fit: contain;
-    }
-    h1 {
-      font-family: "Montserrat", system-ui, sans-serif;
-      font-weight: 700;
-      font-size: clamp(2rem, 5vw, 2.75rem);
-      letter-spacing: -0.02em;
-      line-height: 1.15;
-      margin: 0 0 0.5rem;
-      background: linear-gradient(105deg, var(--cyan-soft) 0%, var(--sage) 55%, var(--cyan) 100%);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-      text-shadow: 0 0 48px rgba(0, 212, 255, 0.2);
-    }
-    .tagline {
-      font-family: "Montserrat", system-ui, sans-serif;
-      font-weight: 500;
-      font-size: clamp(1.15rem, 2.8vw, 1.42rem);
-      color: var(--text-soft);
-      max-width: 38rem;
-      margin: 0 auto 1.25rem;
-      line-height: 1.55;
-    }
-    .tagline strong { color: var(--text); font-weight: 600; }
-    .wellness-note {
-      font-size: 0.9rem;
-      color: var(--text-soft);
-      max-width: 32rem;
-      margin: 0 auto;
-      padding: 0.75rem 1rem;
-      background: var(--surface);
-      border: 1px solid rgba(74, 157, 106, 0.35);
-      border-radius: var(--radius-md);
-      backdrop-filter: blur(8px);
-    }
-    .wellness-note strong { color: var(--green-bright); font-weight: 600; }
-    h2.section-title {
-      font-family: "Montserrat", system-ui, sans-serif;
-      font-size: 0.78rem;
-      font-weight: 600;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--sage);
-      margin: 0 0 1rem;
-      text-align: center;
-    }
-    .app-grid {
-      display: grid;
-      gap: 1.25rem;
-      grid-template-columns: 1fr;
-    }
-    @media (min-width: 640px) {
-      .app-grid { grid-template-columns: 1fr 1fr; }
-    }
-    .app-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      padding: 1.5rem 1.4rem;
-      display: flex;
-      flex-direction: column;
-      backdrop-filter: blur(10px);
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
-      transition: border-color 0.2s, box-shadow 0.2s;
-    }
-    .app-card:hover {
-      border-color: rgba(0, 212, 255, 0.4);
-      box-shadow: 0 12px 40px rgba(0, 212, 255, 0.08);
-    }
-    .app-card h3 {
-      font-family: "Montserrat", system-ui, sans-serif;
-      font-size: 1.25rem;
-      font-weight: 700;
-      margin: 0 0 0.65rem;
-      color: var(--cyan-soft);
-    }
-    .app-card p {
-      margin: 0 0 1rem;
-      font-size: 0.95rem;
-      color: var(--text-soft);
-      line-height: 1.55;
-      flex: 1;
-    }
-    .app-card .legal-row {
-      margin: 0;
-      padding-top: 1rem;
-      border-top: 1px solid rgba(0, 212, 255, 0.15);
-      font-size: 0.88rem;
-      font-weight: 500;
-    }
-    .app-card .legal-row a { margin-right: 0.35rem; }
-    a {
-      color: var(--cyan);
-      text-decoration: none;
-      font-weight: 500;
-    }
-    a:hover { text-decoration: underline; color: var(--cyan-soft); }
-    .external::after {
-      content: " ↗";
-      font-size: 0.82em;
-      opacity: 0.65;
-    }
-    .official {
-      margin-top: clamp(2rem, 4vw, 2.75rem);
-      padding: 1.5rem 1.35rem;
-      background: var(--surface);
-      border: 1px solid rgba(74, 157, 106, 0.3);
-      border-radius: var(--radius-lg);
-      backdrop-filter: blur(10px);
-    }
-    .official h2 {
-      font-family: "Montserrat", system-ui, sans-serif;
-      font-size: 1rem;
-      font-weight: 700;
-      color: var(--cyan-soft);
-      margin: 0 0 0.85rem;
-    }
-    .official ul { list-style: none; padding: 0; margin: 0; }
-    .official li { margin: 0.55rem 0; font-size: 0.98rem; }
-    .official li:first-child { margin-top: 0; }
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+    body { font-family: 'Inter', system-ui; background: #0A0A0A; color: #E0E0E0; margin: 0; padding: 0; line-height: 1.6; }
+    .header { background: #1E1E1E; padding: 40px 20px; text-align: center; border-bottom: 4px solid #00FF9D; }
+    .logo { height: 100px; margin-bottom: 15px; }
+    .container { max-width: 720px; margin: 40px auto; padding: 0 20px; }
+    .app { background: #1E1E1E; padding: 24px; border-radius: 16px; margin: 20px 0; border: 1px solid #00FF9D; }
+    h1 { color: #00FF9D; font-size: 32px; }
+    h2 { color: #00FF9D; font-size: 24px; }
+    a { color: #00FF9D; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .footer { margin-top: 80px; padding-top: 30px; border-top: 1px solid #333; text-align: center; font-size: 14px; color: #888; }
   </style>
 </head>
 <body>
-  <div class="shell">
-    <header class="hero">
-      <div class="logo-wrap">
-        <img src="assets/brand-icon.png" width="132" height="132" alt="Optima Sanitas — DNA and laurel mark" decoding="async" />
-      </div>
-      <h1>Optima Sanitas</h1>
-      <p class="tagline">
-        Movement, breath, and clarity for life on the go — we build thoughtful tools for <strong>Solana Mobile Seeker</strong>
-        so you can train, track, and explore without losing the calm, human side of wellness.
-      </p>
-      <p class="wellness-note">
-        <strong>Wellness only:</strong> what we publish is for general fitness and education — not a substitute for care from your doctor or clinician.
-      </p>
-    </header>
-
-    <h2 class="section-title">Apps &amp; policies</h2>
-    <div class="app-grid">
-      <article class="app-card">
-        <h3>Sanitas Seeker</h3>
-        <p>
-          Your main training companion on Seeker — workouts, progress, and LEV-aware flows tied to our public on-chain programs. Built for people who want structure without noise.
-        </p>
-        <p class="legal-row">
-          <a href="sanitas-seeker/privacy.html">Privacy</a> ·
-          <a href="sanitas-seeker/terms.html">Terms</a> ·
-          <a href="sanitas-seeker/license.html">License</a>
-        </p>
-      </article>
-      <article class="app-card">
-        <h3>Seeker Mobile Calc</h3>
-        <p>
-          A precise scientific calculator with an optional Solana strip for slots, memos, and wallet-aware checks — a light desk companion, not financial advice.
-        </p>
-        <p class="legal-row">
-          <a href="calc/privacy.html">Privacy</a> ·
-          <a href="calc/terms.html">Terms</a> ·
-          <a href="calc/license.html">License</a>
-        </p>
-      </article>
+  <div class="header">
+    <img src="https://i.imgur.com/0fK9vL2.png" alt="Optima Sanitas Logo" class="logo">
+    <h1>Optima Sanitas</h1>
+    <p>Health-and-fitness apps for Solana Mobile Seeker</p>
+  </div>
+  <div class="container">
+    <p><strong>Shipping today:</strong></p>
+    
+    <div class="app">
+      <h2>Sanitas Seeker</h2>
+      <p>Sprint Interval Training + daily on-chain micro-rewards + longevity news threads.</p>
+    </div>
+    
+    <div class="app">
+      <h2>Seeker Mobile Calc</h2>
+      <p>Scientific calculator + Solana read-only tools (MWA).</p>
     </div>
 
-    <section class="official" aria-labelledby="official-h">
-      <h2 id="official-h">Connect</h2>
-      <ul>
-        <li><a class="external" href="https://x.com/optima_sanitas" rel="noopener noreferrer">X (@optima_sanitas)</a></li>
-        <li><a class="external" href="https://github.com/OptimaSanitas/lev-anchor" rel="noopener noreferrer">Anchor programs (lev-anchor)</a></li>
-        <li><a class="external" href="https://github.com/OptimaSanitas/lev-app" rel="noopener noreferrer">Sanitas Seeker source (lev-app)</a></li>
-        <li><a class="external" href="https://github.com/OptimaSanitas/optimasanitas-site" rel="noopener noreferrer">This site on GitHub</a></li>
-      </ul>
-    </section>
+    <h2>Legal</h2>
+    <p><a href="calc/privacy.html">Privacy Policy</a> · <a href="calc/terms.html">Terms of Use</a> · <a href="calc/license.html">License</a> · <a href="calc/copyright.html">Copyright</a></p>
+
+    <p>Contact: X <a href="https://x.com/optima_sanitas">@optima_sanitas</a><br>
+    Official site: <a href="https://optimasanitas.sol.site">optimasanitas.sol.site</a></p>
+
+    <div class="footer">
+      © 2026 Optima Sanitas · All rights reserved
+    </div>
   </div>
 </body>
 </html>
