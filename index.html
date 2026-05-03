@@ -5,22 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Optima Sanitas — health and fitness for Solana Mobile Seeker. Official hub for apps, legal pages, and community links." />
   <title>Optima Sanitas</title>
+  <link rel="icon" href="assets/brand-icon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="assets/brand-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet" />
   <style>
     :root {
       color-scheme: dark;
-      --bg: #0c1210;
-      --bg-warm: #111916;
-      --surface: rgba(20, 32, 28, 0.75);
-      --text: #ecf4f0;
-      --text-soft: #b8cfc4;
-      --mint: #4fe0b0;
-      --mint-deep: #2d9a78;
-      --mint-glow: rgba(79, 224, 176, 0.22);
-      --sage: #5a8f7a;
-      --border: rgba(79, 224, 176, 0.18);
+      /* Pulled from Sanitas app icon: midnight teal, DNA cyan, laurel greens */
+      --bg-deep: #02080c;
+      --bg: #051015;
+      --bg-soft: #0a1820;
+      --surface: rgba(8, 28, 36, 0.82);
+      --text: #e8f4fc;
+      --text-soft: #9ec4d0;
+      --cyan: #00d4ff;
+      --cyan-soft: #5ee0ff;
+      --cyan-dim: #0099b8;
+      --green: #2d6a45;
+      --green-bright: #4a9d6a;
+      --sage: #7aab7e;
+      --border: rgba(0, 212, 255, 0.22);
+      --glow-cyan: rgba(0, 212, 255, 0.18);
+      --glow-green: rgba(74, 157, 106, 0.12);
       --radius-lg: 22px;
       --radius-md: 14px;
     }
@@ -29,14 +37,14 @@
     body {
       margin: 0;
       min-height: 100vh;
-      font-family: "Outfit", system-ui, sans-serif;
+      font-family: "Inter", system-ui, sans-serif;
       font-weight: 400;
       color: var(--text);
       line-height: 1.6;
       background:
-        radial-gradient(ellipse 100% 70% at 50% -15%, rgba(79, 224, 176, 0.12) 0%, transparent 50%),
-        radial-gradient(ellipse 80% 50% at 100% 50%, rgba(90, 143, 122, 0.08) 0%, transparent 45%),
-        linear-gradient(165deg, var(--bg-warm) 0%, var(--bg) 40%, #080d0b 100%);
+        radial-gradient(ellipse 100% 80% at 50% -20%, var(--glow-cyan) 0%, transparent 55%),
+        radial-gradient(ellipse 70% 50% at 90% 60%, var(--glow-green) 0%, transparent 50%),
+        linear-gradient(180deg, var(--bg-soft) 0%, var(--bg) 45%, var(--bg-deep) 100%);
     }
     .shell {
       max-width: 52rem;
@@ -53,36 +61,44 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      width: clamp(88px, 18vw, 112px);
-      height: clamp(88px, 18vw, 112px);
-      margin-bottom: 1.25rem;
-      border-radius: 28px;
-      background: linear-gradient(145deg, rgba(79, 224, 176, 0.35) 0%, rgba(45, 154, 120, 0.2) 100%);
-      box-shadow: 0 12px 48px var(--mint-glow), inset 0 1px 0 rgba(255, 255, 255, 0.12);
-      border: 1px solid rgba(79, 224, 176, 0.35);
+      margin-bottom: 1.35rem;
+      padding: 0.35rem;
+      border-radius: 26%;
+      background: radial-gradient(circle at 30% 25%, rgba(0, 212, 255, 0.12) 0%, transparent 55%),
+        linear-gradient(145deg, rgba(45, 106, 69, 0.35) 0%, rgba(5, 16, 21, 0.9) 100%);
+      border: 1px solid rgba(0, 212, 255, 0.28);
+      box-shadow: 0 12px 48px rgba(0, 212, 255, 0.12), 0 0 0 1px rgba(74, 157, 106, 0.15);
     }
-    .logo-wrap svg { width: 58%; height: 58%; }
+    .logo-wrap img {
+      display: block;
+      width: clamp(100px, 22vw, 132px);
+      height: auto;
+      border-radius: 22%;
+      object-fit: contain;
+    }
     h1 {
-      font-family: "Fraunces", Georgia, serif;
-      font-optical-sizing: auto;
+      font-family: "Montserrat", system-ui, sans-serif;
       font-weight: 700;
       font-size: clamp(2rem, 5vw, 2.75rem);
-      letter-spacing: -0.03em;
+      letter-spacing: -0.02em;
       line-height: 1.15;
       margin: 0 0 0.5rem;
-      color: var(--mint);
-      text-shadow: 0 0 40px rgba(79, 224, 176, 0.25);
+      background: linear-gradient(105deg, var(--cyan-soft) 0%, var(--sage) 55%, var(--cyan) 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-shadow: 0 0 48px rgba(0, 212, 255, 0.2);
     }
     .tagline {
-      font-family: "Fraunces", Georgia, serif;
-      font-style: italic;
-      font-weight: 400;
-      font-size: clamp(1.15rem, 2.8vw, 1.45rem);
+      font-family: "Montserrat", system-ui, sans-serif;
+      font-weight: 500;
+      font-size: clamp(1.15rem, 2.8vw, 1.42rem);
       color: var(--text-soft);
-      max-width: 36rem;
+      max-width: 38rem;
       margin: 0 auto 1.25rem;
       line-height: 1.55;
     }
+    .tagline strong { color: var(--text); font-weight: 600; }
     .wellness-note {
       font-size: 0.9rem;
       color: var(--text-soft);
@@ -90,16 +106,16 @@
       margin: 0 auto;
       padding: 0.75rem 1rem;
       background: var(--surface);
-      border: 1px solid var(--border);
+      border: 1px solid rgba(74, 157, 106, 0.35);
       border-radius: var(--radius-md);
       backdrop-filter: blur(8px);
     }
-    .wellness-note strong { color: var(--mint); font-weight: 600; }
+    .wellness-note strong { color: var(--green-bright); font-weight: 600; }
     h2.section-title {
-      font-family: "Fraunces", Georgia, serif;
-      font-size: 0.85rem;
+      font-family: "Montserrat", system-ui, sans-serif;
+      font-size: 0.78rem;
       font-weight: 600;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.14em;
       text-transform: uppercase;
       color: var(--sage);
       margin: 0 0 1rem;
@@ -121,19 +137,19 @@
       display: flex;
       flex-direction: column;
       backdrop-filter: blur(10px);
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
       transition: border-color 0.2s, box-shadow 0.2s;
     }
     .app-card:hover {
-      border-color: rgba(79, 224, 176, 0.4);
-      box-shadow: 0 12px 40px rgba(79, 224, 176, 0.08);
+      border-color: rgba(0, 212, 255, 0.4);
+      box-shadow: 0 12px 40px rgba(0, 212, 255, 0.08);
     }
     .app-card h3 {
-      font-family: "Fraunces", Georgia, serif;
-      font-size: 1.35rem;
+      font-family: "Montserrat", system-ui, sans-serif;
+      font-size: 1.25rem;
       font-weight: 700;
       margin: 0 0 0.65rem;
-      color: var(--mint);
+      color: var(--cyan-soft);
     }
     .app-card p {
       margin: 0 0 1rem;
@@ -145,17 +161,17 @@
     .app-card .legal-row {
       margin: 0;
       padding-top: 1rem;
-      border-top: 1px solid var(--border);
+      border-top: 1px solid rgba(0, 212, 255, 0.15);
       font-size: 0.88rem;
       font-weight: 500;
     }
     .app-card .legal-row a { margin-right: 0.35rem; }
     a {
-      color: var(--mint);
+      color: var(--cyan);
       text-decoration: none;
       font-weight: 500;
     }
-    a:hover { text-decoration: underline; color: #7aecc8; }
+    a:hover { text-decoration: underline; color: var(--cyan-soft); }
     .external::after {
       content: " ↗";
       font-size: 0.82em;
@@ -165,22 +181,18 @@
       margin-top: clamp(2rem, 4vw, 2.75rem);
       padding: 1.5rem 1.35rem;
       background: var(--surface);
-      border: 1px solid var(--border);
+      border: 1px solid rgba(74, 157, 106, 0.3);
       border-radius: var(--radius-lg);
       backdrop-filter: blur(10px);
     }
     .official h2 {
-      font-family: "Fraunces", Georgia, serif;
+      font-family: "Montserrat", system-ui, sans-serif;
       font-size: 1rem;
-      font-weight: 600;
-      color: var(--mint);
+      font-weight: 700;
+      color: var(--cyan-soft);
       margin: 0 0 0.85rem;
     }
-    .official ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
+    .official ul { list-style: none; padding: 0; margin: 0; }
     .official li { margin: 0.55rem 0; font-size: 0.98rem; }
     .official li:first-child { margin-top: 0; }
   </style>
@@ -188,22 +200,12 @@
 <body>
   <div class="shell">
     <header class="hero">
-      <div class="logo-wrap" aria-hidden="true">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" aria-hidden="true">
-          <defs>
-            <linearGradient id="osLeaf" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" style="stop-color:#7aecc8"/>
-              <stop offset="100%" style="stop-color:#2d9a78"/>
-            </linearGradient>
-          </defs>
-          <path d="M32 6 C18 18 12 30 12 40c0 10 8 18 20 18s20-8 20-18c0-10-6-22-20-34z" fill="url(#osLeaf)" opacity="0.95"/>
-          <path d="M32 22c-6 4-10 10-10 16 0 8 4 14 10 14s10-6 10-14c0-6-4-12-10-16z" fill="#0c1210" opacity="0.35"/>
-          <ellipse cx="32" cy="26" rx="8" ry="12" fill="#0c1210" opacity="0.2"/>
-        </svg>
+      <div class="logo-wrap">
+        <img src="assets/brand-icon.png" width="132" height="132" alt="Optima Sanitas — DNA and laurel mark" decoding="async" />
       </div>
       <h1>Optima Sanitas</h1>
       <p class="tagline">
-        Movement, breath, and clarity for life on the go — we build thoughtful tools for <strong style="font-weight:600;color:var(--text)">Solana Mobile Seeker</strong>
+        Movement, breath, and clarity for life on the go — we build thoughtful tools for <strong>Solana Mobile Seeker</strong>
         so you can train, track, and explore without losing the calm, human side of wellness.
       </p>
       <p class="wellness-note">
