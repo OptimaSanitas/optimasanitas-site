@@ -1,43 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Seeker Mobile Calc — Privacy Policy</title>
-  <link rel="stylesheet" href="../assets/site.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sanitas Seeker — Privacy Policy</title>
+  <style>
+    :root { color-scheme: dark; }
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; line-height: 1.5; max-width: 40rem; margin: 1.5rem auto; padding: 0 1rem; background: #0a0d10; color: #e8eaed; }
+    h1 { font-size: 1.35rem; color: #4fe0b0; }
+    h2 { font-size: 1.05rem; margin-top: 1.5rem; color: #b8c5c0; }
+    a { color: #6ee7b7; }
+    p, li { margin: 0.5rem 0; }
+    ul { padding-left: 1.25rem; }
+    .muted { color: #8b9a95; font-size: 0.9rem; }
+    .nav-hub { margin-bottom: 1rem; }
+  </style>
 </head>
 <body>
-  <div class="header">
-    <img src="../assets/brand-icon.png" alt="Optima Sanitas Logo" class="logo" width="100" height="100">
-    <h1>Optima Sanitas</h1>
-    <p>Health-and-fitness apps for Solana Mobile Seeker</p>
-  </div>
-  <div class="container">
-    <h1>Seeker Mobile Calc — Privacy Policy</h1>
-    <p><strong>Last updated:</strong> May 03, 2026 · Operator: Optima Sanitas</p>
-    <p>Seeker Mobile Calc is a scientific calculator for Solana Mobile Seeker with optional Solana read-only tools.</p>
+  <p class="nav-hub"><a href="../index.html">← Optima Sanitas hub</a></p>
+  <h1>Sanitas Seeker — Privacy Policy</h1>
+  <p class="muted"><strong>Last updated:</strong> May 3, 2026 &middot; <strong>Operator:</strong> Optima Sanitas</p>
 
-    <h2>What we do not collect</h2>
-    <p>No accounts, no login, no analytics SDK. All expressions and history stay on your device unless you manually copy them.</p>
+  <h2>Introduction</h2>
+  <p><strong>Sanitas Seeker</strong> (the “App”) is a health-and-fitness client built for <strong>Solana Mobile Seeker</strong> (Solana Mobile’s <strong>Android</strong> handset). It may include training and activity tracking, wellness-oriented tooling, and <strong>optional</strong> Solana wallet flows (e.g. signing or viewing on-chain state related to features we ship). This policy describes categories of information the App may touch; it is a transparency template for engineering and store listings.</p>
+  <p>By using the App, you agree to this policy.</p>
 
-    <h2>What the App may use or display</h2>
-    <p>1. Public Solana RPC calls (slot, balance, transactions).<br>
-       2. Optional wallet connection via Mobile Wallet Adapter (you sign; keys stay in Seed Vault).<br>
-       3. Optional public quote API (no wallet data sent).</p>
+  <h2>What we do <strong>not</strong> operate by default</h2>
+  <ul>
+    <li>The App is designed <strong>without</strong> a required centralized Optima Sanitas login or “fitness account” database.</li>
+    <li>This release includes <strong>no</strong> first-party analytics or crash-reporting SDKs. Any future additions will be disclosed in the App UI or release notes.</li>
+  </ul>
 
-    <h2>On-chain data</h2>
-    <p>Blockchain data is public by design. We do not delete on-chain records.</p>
+  <h2>Information that may exist on your device</h2>
+  <ul>
+    <li><strong>Workout / session / preference data</strong> you enter or generate may be stored <strong>locally</strong> on the device for UX (e.g. history, plans). Clearing app data or uninstalling removes local copies subject to OS behavior.</li>
+    <li><strong>Exports or backups</strong> you create (screenshots, files you save) are under your control.</li>
+  </ul>
 
-    <h2>Contact</h2>
-    <p>X (@optima_sanitas) or optimasanitas@atomicmail.io<br>
-    <a href="https://optimasanitas.sol.site">Official Site</a></p>
+  <h2>Blockchain, wallet, and public network data</h2>
+  <p>If you connect a <strong>Solana wallet</strong> or approve transactions, <strong>public-key addresses</strong> and <strong>on-chain records</strong> are visible on the network and in explorers—by design, not secret. We do not custody your private keys in the App.</p>
+  <p><strong>RPC providers</strong> you or the App use can observe requests necessary to submit or read chain state. Choose endpoints you trust.</p>
 
-    <h2>More</h2>
-    <p><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Use</a> · <a href="license.html">License</a> · <a href="copyright.html">Copyright</a> · <a href="../legal.html">Legal hub</a> · <a href="../index.html">Site home</a></p>
+  <h2>Health &amp; fitness disclaimer (privacy framing)</h2>
+  <p>Wellness features are <strong>not</strong> a substitute for professional medical advice. This policy does not describe a regulated medical device.</p>
 
-    <div class="footer">
-      © 2026 Optima Sanitas · All rights reserved
-    </div>
-  </div>
+  <h2>Children</h2>
+  <p>The App is not directed at children under 13. Parents should supervise device, wallet, and internet use.</p>
+
+  <h2>On-chain data</h2>
+  <p>Blockchain data is <strong>public</strong> and generally <strong>immutable</strong>. “Deleting” local app data does not erase historical chain activity.</p>
+
+  <h2>Contact</h2>
+  <p><strong>Optima Sanitas</strong> — <strong>Preferred:</strong> <a href="https://x.com/optima_sanitas" rel="noopener noreferrer">X (@optima_sanitas)</a>. <strong>Email:</strong> <a href="mailto:optimasanitas@atomicmail.io">optimasanitas@atomicmail.io</a> (e.g. privacy questions).</p>
+  <p><strong>Related:</strong> <a href="./terms.html">Terms of use</a> &middot; <a href="./license.html">License (MIT)</a></p>
+
+  <h2>Changes</h2>
+  <p>We may update this policy. The <strong>“Last updated”</strong> date at the top reflects the document text in this public site folder.</p>
+
+  <p class="muted"><em>Template for engineering transparency; have counsel review before production or store release.</em></p>
 </body>
 </html>
