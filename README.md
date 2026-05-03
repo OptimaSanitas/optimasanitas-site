@@ -4,6 +4,8 @@ This repository is the **canonical public web root** for the **Optima Sanitas** 
 
 It replaces using **`seeker-mobile-calc-legal`** as the main site repo — that name stays attached to the calculator only; this repo is the line hub.
 
+**Agent / thread handoff:** This repo is **public** — long **`CONTINUATION.md`** / continuation narratives belong in **private** app repos (**`OptimaSanitas/SeekerMobileCalc`**, **`OptimaSanitas/lev-app`**, etc.). The **`CONTINUATION.md`** here is a **short stub** only; see that file’s header.
+
 **GitHub Pages (HTTPS mirror):** `https://optimasanitas.github.io/optimasanitas-site/`  
 **Firebase Hosting:** deploy from this repo — default URL `https://<PROJECT_ID>.web.app` (and `firebaseapp.com`). Good stable HTTPS if IPFS pinning signups are painful; point SNS **URL** record at your Firebase URL or custom domain.  
 **SNS / Sol.site:** Use **URL** + **IPFS** records on [sns.id](https://www.sns.id/) — see below. `*.sol.site` may keep showing the SNS profile unless Bonfida wires IPFS into that gateway; Brave [URL/CNAME resolution](https://docs.sns.id/collection/sns-v1/records#url-cname-records) and IPFS gateways still reach your content.
