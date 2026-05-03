@@ -4,7 +4,7 @@ This repository is the **canonical public web root** for the **Optima Sanitas** 
 
 It replaces using **`seeker-mobile-calc-legal`** as the main site repo — that name stays attached to the calculator only; this repo is the line hub.
 
-**Agent / thread handoff:** This repo is **public** on GitHub — long **`CONTINUATION.md`** / continuation narratives belong in **private** app repos (**`OptimaSanitas/SeekerMobileCalc`**, **`OptimaSanitas/lev-app`**, etc.). The **`CONTINUATION.md`** here is a **short stub** only; see that file’s header.
+**Agent / thread handoff:** This repo is **public** on GitHub — long continuation / agent handoffs **cannot** be included here; they **may** live only in **private** repos (**`OptimaSanitas/SeekerMobileCalc`**, **`OptimaSanitas/lev-app`**, etc.). The **`CONTINUATION.md`** here is a **short stub** only (see that file’s header). Same rule as **`gameseekrs-max/VaultRunner`** `docs/continuation.md` **§ *Continuation files — private repos only*** for the GameSeekrs line.
 
 **Org GitHub visibility:** Under **`OptimaSanitas`**, only **`optimasanitas-site`** (this repo) and **`lev-anchor`** are **public** repositories. **App and legacy sources** — **`SeekerMobileCalc`**, **`lev-app`**, **`seeker-mobile-calc-legal`**, **`solana-seeker-exercise-app`**, and similar — stay **private**; ship store-facing legal HTML from this Pages repo, not from private repo blobs. **Before** changing any repo’s visibility, confirm with **`SeekerMobileCalc`** `CONTINUATION.md` (org policy). **Related org `gameseekrs-max`:** only **`gameseekrs-site`** + **`Gameseekrs`** are public; **`VaultRunner`** / **`GSkrsFlashlight`** stay private — see **`gameseekrs-max/VaultRunner`** `docs/continuation.md`.
 
