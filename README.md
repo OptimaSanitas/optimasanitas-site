@@ -1,6 +1,6 @@
 # Optima Sanitas — public site (org-wide)
 
-This repository is the **canonical public web root** for the **Optima Sanitas** brand on Seeker: landing **`index.html`**, **`legal.html`** (hub linking both apps’ legal sets), room for more apps over time, and **per-app legal HTML** in folders (**`sanitas-seeker/`**, **`calc/`**).
+This repository is the **canonical public web root** for the **Optima Sanitas** brand on Seeker: landing **`index.html`**, **`legal.html`** (hub linking both apps’ legal sets), room for more apps over time, and **per-app legal HTML** in folders (**`sanitas-seeker/`**, **`calc/`**). Shared chrome lives in **`assets/site.css`** with the logo at **`assets/brand-icon.png`** (do not hotlink external image hosts; Imgur links rot).
 
 It replaces using **`seeker-mobile-calc-legal`** as the main site repo — that name stays attached to the calculator only; this repo is the line hub.
 
