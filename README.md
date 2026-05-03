@@ -1,6 +1,6 @@
 # Optima Sanitas — public site (org-wide)
 
-This repository is the **canonical public web root** for the **Optima Sanitas** brand on Seeker: landing **`index.html`**, room for more apps over time, and **per-app legal HTML** in folders (**`sanitas-seeker/`**, **`calc/`**).
+This repository is the **canonical public web root** for the **Optima Sanitas** brand on Seeker: landing **`index.html`**, **`legal.html`** (hub linking both apps’ legal sets), room for more apps over time, and **per-app legal HTML** in folders (**`sanitas-seeker/`**, **`calc/`**).
 
 It replaces using **`seeker-mobile-calc-legal`** as the main site repo — that name stays attached to the calculator only; this repo is the line hub.
 
@@ -12,7 +12,7 @@ It replaces using **`seeker-mobile-calc-legal`** as the main site repo — that 
 
 ## Firebase Hosting
 
-Config lives in **`firebase.json`** (deploys **`index.html`**, **`calc/*.html`**, **`sanitas-seeker/*.html`** — ignores `.git`, **`scripts/`**, markdown, GitHub **`CNAME`**).
+Config lives in **`firebase.json`** (deploys **`index.html`**, **`legal.html`**, **`calc/*.html`**, **`sanitas-seeker/*.html`** — ignores `.git`, **`scripts/`**, markdown, GitHub **`CNAME`**).
 
 1. Install CLI: `npm install -g firebase-tools`
 2. Log in: `firebase login`
