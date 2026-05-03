@@ -4,7 +4,9 @@ This repository is the **canonical public web root** for the **Optima Sanitas** 
 
 It replaces using **`seeker-mobile-calc-legal`** as the main site repo — that name stays attached to the calculator only; this repo is the line hub.
 
-**Agent / thread handoff:** This repo is **public** — long **`CONTINUATION.md`** / continuation narratives belong in **private** app repos (**`OptimaSanitas/SeekerMobileCalc`**, **`OptimaSanitas/lev-app`**, etc.). The **`CONTINUATION.md`** here is a **short stub** only; see that file’s header.
+**Agent / thread handoff:** This repo is **public** on GitHub — long **`CONTINUATION.md`** / continuation narratives belong in **private** app repos (**`OptimaSanitas/SeekerMobileCalc`**, **`OptimaSanitas/lev-app`**, etc.). The **`CONTINUATION.md`** here is a **short stub** only; see that file’s header.
+
+**Org GitHub visibility:** Under **`OptimaSanitas`**, only **`optimasanitas-site`** (this repo) and **`lev-anchor`** are **public** repositories. **App and legacy sources** — **`SeekerMobileCalc`**, **`lev-app`**, **`seeker-mobile-calc-legal`**, **`solana-seeker-exercise-app`**, and similar — stay **private**; ship store-facing legal HTML from this Pages repo, not from private repo blobs.
 
 **GitHub Pages (HTTPS mirror):** `https://optimasanitas.github.io/optimasanitas-site/`  
 **Firebase Hosting:** deploy from this repo — default URL `https://<PROJECT_ID>.web.app` (and `firebaseapp.com`). Good stable HTTPS if IPFS pinning signups are painful; point SNS **URL** record at your Firebase URL or custom domain.  
