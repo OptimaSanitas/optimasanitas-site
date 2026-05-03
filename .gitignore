@@ -1,7 +1,2 @@
-.firebase/
-firebase-debug.log
-firestore-debug.log
-ui-debug.log
-
 # Cursor/agent continuation notes — keep local only
 CONTINUATION.md
