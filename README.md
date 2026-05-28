@@ -11,25 +11,24 @@ Shared layout and branding: **`assets/site-theme.css`**, **`assets/brand-icon.pn
 
 **Where it’s served**
 
-- **`https://optimasanitas.sol.site`** — SNS **`optimasanitas.sol`** + Sol.site ([configuration](https://docs.sns.id/collection/sns-v2/sol.site/website-configuration.md))
+- **`https://optimasanitas.com`** — canonical custom domain (GitHub Pages + Namecheap)
 - **`https://optimasanitas.github.io/optimasanitas-site/`** — GitHub Pages mirror
+- **`https://optimasanitas.sol.site`** — optional SNS/Sol.site alias
 
-Hosting is **Git only**: push to **`main`**, enable **GitHub Pages** from the repo root, point Sol.site at **`optimasanitas.github.io`**. No Firebase or IPFS in the current workflow.
+Hosting is **Git only**: push to **`main`**, enable **GitHub Pages** from the repo root, **`CNAME`** = **`optimasanitas.com`**, **Enforce HTTPS**. No Firebase or IPFS in the current workflow.
 
 ---
 
-## GitHub Pages + Sol.site
+## GitHub Pages + custom domain
 
 1. Push this tree to branch **`main`** on [OptimaSanitas/optimasanitas-site](https://github.com/OptimaSanitas/optimasanitas-site).
 2. **Settings → Pages:** Deploy from branch **`main`**, folder **`/ (root)`**.
-3. **Custom domain:** add **`optimasanitas.sol.site`**, wait for DNS check, **Enforce HTTPS**. Only **one** GitHub Pages site should own that hostname.
-4. **sns.id** → **`optimasanitas.sol`** → **Configure Sol.site** → CNAME **`optimasanitas.github.io`** ([SNS website configuration](https://docs.sns.id/collection/sns-v2/sol.site/website-configuration.md)).
+3. **Custom domain:** **`optimasanitas.com`** — Namecheap **A** records (`185.199.108–111.153`) on `@`, **CNAME** `www` → **`optimasanitas.github.io`**, wait for DNS check, **Enforce HTTPS**.
+4. **Optional:** SNS **`optimasanitas.sol`** / Sol.site may still point at **`optimasanitas.github.io`**; apps and store listings use **`.com`** as canonical.
 
-**Repo `CNAME`:** file contains `optimasanitas.sol.site` for Pages.
+**Repo `CNAME`:** `optimasanitas.com`
 
-If **`optimasanitas.sol.site`** still shows the SNS profile UI, Sol.site is not wired to GitHub yet — complete step 4, then re-check GitHub’s custom-domain DNS status.
-
-Confirm in a browser: hub at `https://optimasanitas.sol.site/` and legal paths such as `…/sanitas-seeker/privacy.html` and `…/calc/privacy.html` return **200**.
+Confirm in a browser: `https://optimasanitas.com/`, `…/sanitas-seeker/privacy.html`, `…/calc/privacy.html` return **200**.
 
 ---
 
@@ -43,6 +42,6 @@ Confirm in a browser: hub at `https://optimasanitas.sol.site/` and legal paths s
 | **`calc/*.html`** | Legal pages for **Seeker Mobile Calc** |
 | *(future)* **`…/`** | Additional per-app folders as new titles ship |
 
-For store and in-app links, use **`https://optimasanitas.sol.site`** (or the **`optimasanitas.github.io/optimasanitas-site/`** mirror while DNS is in progress).
+For store and in-app links, use **`https://optimasanitas.com`** (mirror: **`optimasanitas.github.io/optimasanitas-site/`**).
 
 *Templates: review with counsel before production or store release.*
