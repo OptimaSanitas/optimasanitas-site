@@ -16,6 +16,8 @@
     "title": "News clip",
     "caption": "One clip for the April issues. Educational only. Not medical advice.",
     "image": "posts/archive-news-clip/poster.jpg",
-    "episode": "posts/archive-news-clip/news-move.mp4"
+    "webm": "posts/archive-news-clip/desk.webm",
+    "episode": "posts/archive-news-clip/desk.webm",
+    "mp4": "posts/archive-news-clip/desk.mp4"
   }
 ]

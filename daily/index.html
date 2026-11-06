@@ -72,7 +72,19 @@
         visual.preload = "auto";
         visual.playsInline = true;
         if (post.image) visual.poster = post.image;
-        visual.src = post.episode;
+        const sources = [];
+        if (post.webm) sources.push([post.webm, "video/webm"]);
+        if (post.episode) {
+          const type = String(post.episode).endsWith(".webm") ? "video/webm" : "video/mp4";
+          if (!sources.some(([src]) => src === post.episode)) sources.push([post.episode, type]);
+        }
+        if (post.mp4) sources.push([post.mp4, "video/mp4"]);
+        sources.forEach(([src, type]) => {
+          const source = document.createElement("source");
+          source.src = src;
+          source.type = type;
+          visual.append(source);
+        });
       }
       const title = document.createElement("h3");
       title.textContent = post.title;
