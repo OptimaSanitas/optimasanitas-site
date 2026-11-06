@@ -10,14 +10,90 @@
     "post_ids": [],
     "video_url": "https://optimasanitas.com/daily/posts/2026-11-05/episode.mp4",
     "video_tag": "running",
-    "workout_title": "Daily issue · November 5",
-    "health_review_title": "Easy pace · Nov 5",
+    "workout_title": "Daily issue \u00b7 November 5",
+    "health_review_title": "Easy pace \u00b7 Nov 5",
     "health_review_body": "Educational only. Not medical advice.\n\nRun for twenty easy minutes. If you can talk, the pace is honest. The race is for your health sweetie.",
     "persona_image_url": "https://optimasanitas.com/daily/posts/2026-11-05/still.jpg",
     "further_reading": [
       {
         "label": "This listen on optimasanitas.com",
         "url": "https://optimasanitas.com/daily/"
+      }
+    ]
+  },
+  {
+    "id": "curations-set-b-2026-04-24",
+    "timestamp": 1745491200,
+    "date": "Apr 24, 2026",
+    "video_date": "Apr 24, 2026",
+    "title": "Daily issue \u00b7 news clip (beta)",
+    "content": "Same news clip as Set A in the daily player. Treat it as context between reading the five curations. Adjust intensity; stop for pain or dizziness.",
+    "post_urls": [],
+    "post_ids": [],
+    "video_url": "https://ixsb2s4ac33ctdahs7tzdgms2l72zurtpxjjghl2ptl5wmkl43da.turbo-gateway.com/ReQdS4AW9imMB5fnkZmS0v-s0jN90pMdenzX2zFL5sY",
+    "video_tag": "workout",
+    "workout_title": "Daily issue \u00b7 news clip (beta)",
+    "health_review_title": "5 curated posts \u00b7 Set B",
+    "health_review_body": "Educational only; not medical advice. Outbound links open in your system browser, not in-app (Seeker never embeds third-party pages).\n\n\u2460 Longevity escape velocity (LEV) \u2014 \"Close enough\" that the next years could deliver a stack of medical breakthroughs vs. the last few decades. Still grounded: your behavior today is what you control; hype doesn't replace your clinician.\n\n\u2461 Plank & core \"killers\" \u2014 Anti-extension planks and bracing beat endless flexion when the goal is a useful midline. Quality > duration for most people.\n\n\u2462 Strength + cardio + HIIT \u2014 Not \"pick one\": bone and muscle (strength), heart and mitochondria (aerobic work), and sharp intervals (metabolic) each do different jobs for longevity. Skipping steady aerobic work has a cost for many goals.\n\n\u2463 Food, hormones, skin, gut \u2014 What you eat most days nudges energy, skin, and digestion. Patterns beat single superfoods: enough protein, fiber, sleep, and hydration; minimize ultra-processed if that fits you.\n\n\u2464 Parkinson's & cell therapy (news) \u2014 Phase work on cell approaches is worth following as science, not as self-treatment. #longevity and neuro research move fast; rely on primary sources and your care team for any decision.",
+    "persona_image_url": "https://i.imgur.com/0fK9vL2.png",
+    "further_reading": [
+      {
+        "label": "TechCrunch \u2014 \"survive the next 10 years\" (longevity context)",
+        "url": "https://techcrunch.com/2025/04/06/want-to-stay-young-peter-diamandis-says-survive-the-next-10-years/"
+      },
+      {
+        "label": "Cleveland Clinic \u2014 core exercises (overview)",
+        "url": "https://my.clevelandclinic.org/health/symptoms/26555-core-exercise"
+      },
+      {
+        "label": "Physical Activity Guidelines (adults) \u2014 PAG",
+        "url": "https://www.cdc.gov/physical-activity-basics/guidelines/adults.html"
+      },
+      {
+        "label": "Harvard Nutrition Source \u2014 what to eat",
+        "url": "https://www.hsph.harvard.edu/nutritionsource/what-should-you-eat/"
+      },
+      {
+        "label": "NIA (NIH) \u2014 Parkinson\u2019s overview (trusted primer)",
+        "url": "https://www.nia.nih.gov/health/what-parkinsons-disease"
+      }
+    ]
+  },
+  {
+    "id": "curations-set-a-2026-04-23",
+    "timestamp": 1745404800,
+    "date": "Apr 23, 2026",
+    "video_date": "Apr 23, 2026",
+    "title": "Daily issue \u00b7 news clip (beta)",
+    "content": "News clip for the daily issue player (separate from the sprint exercise verification video). Same movement ideas below still apply as general guidance. Adjust to your capacity.",
+    "post_urls": [],
+    "post_ids": [],
+    "video_url": "https://ixsb2s4ac33ctdahs7tzdgms2l72zurtpxjjghl2ptl5wmkl43da.turbo-gateway.com/ReQdS4AW9imMB5fnkZmS0v-s0jN90pMdenzX2zFL5sY",
+    "video_tag": "workout",
+    "workout_title": "Daily issue \u00b7 news clip (beta)",
+    "health_review_title": "5 curated posts \u00b7 Set A",
+    "health_review_body": "Educational only; not medical advice. Open links in your browser (system) \u2014 we don't embed X or other sites in-app.\n\n\u2460 The bridge (LEV) \u2014 You don't have to \"solve\" aging this year. Staying in the game (sleep, safety, training that fits you) keeps optionality for better tools in the 2030s. One job: avoid needless risk; stack what keeps you strong and mobile.\n\n\u2461 Grip & forearms \u2014 \"Iron fist\" is shorthand for resilient hands and forearms: carrying, holding, and joint confidence. Prefer short, quality work over grinders that wreck tomorrow's session.\n\n\u2462 Pelvic floor \u2014 A coordinated floor supports core stability, pressure control, and confident movement. Technique and breathing often beat over-squeezing. Persistent symptoms: ask a qualified clinician.\n\n\u2463 Heart \"age\" & research \u2014 LAV\u2013BPIFB4 and related work are part of how science maps cardiac aging; polygenic readouts group many small genetic hints. What you still control: activity, sleep, blood pressure, nutrition \u2014 the usual levers.\n\n\u2464 Core under load \u2014 Marine-style inspo: a braced midline for pushes, pulls, carries. Favor anti-extension/rotation; if your back or neck objects, scale range or load, don't grit through.",
+    "persona_image_url": "https://i.imgur.com/0fK9vL2.png",
+    "further_reading": [
+      {
+        "label": "Diamandis.com \u2014 metatrends & abundance (context)",
+        "url": "https://www.diamandis.com/metatrends"
+      },
+      {
+        "label": "ACE \u2014 forearm & grip (training ideas)",
+        "url": "https://www.acefitness.org/resources/pros/expert-article/3710/5-benefits-of-forearm-training-for-athletes/"
+      },
+      {
+        "label": "NHS \u2014 pelvic floor exercises (basics)",
+        "url": "https://www.nhs.uk/conditions/urinary-incontinence/stress-incontinence/"
+      },
+      {
+        "label": "NIH/PMC \u2014 BPIFB4 & cardiac aging (research paper)",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10318395/"
+      },
+      {
+        "label": "CDC \u2014 benefits of physical activity",
+        "url": "https://www.cdc.gov/physical-activity-basics/health-benefits/index.html"
       }
     ]
   }

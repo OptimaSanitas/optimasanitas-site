@@ -34,35 +34,46 @@
     function card(post) {
       const article = document.createElement("article");
       article.className = "post-card";
-      const still = document.createElement("img");
-      still.src = post.image;
-      still.alt = post.title;
-      const voice = document.createElement("audio");
-      voice.controls = true;
-      voice.preload = "auto";
-      voice.src = post.audio || post.episode;
       const body = document.createElement("div");
       body.className = "post-body";
-      const play = document.createElement("button");
-      play.type = "button";
-      play.className = "post-play";
-      const playLabel = "Play " + post.host;
-      play.textContent = playLabel;
-      function setLabel() {
-        play.textContent = voice.paused ? playLabel : "Pause";
-      }
-      play.addEventListener("click", () => {
-        if (voice.paused) {
-          voice.play().catch(() => {
-            play.textContent = playLabel;
-          });
-        } else {
-          voice.pause();
+      let visual;
+      if (post.audio) {
+        visual = document.createElement("img");
+        visual.src = post.image;
+        visual.alt = post.title;
+        const voice = document.createElement("audio");
+        voice.controls = true;
+        voice.preload = "auto";
+        voice.src = post.audio;
+        const play = document.createElement("button");
+        play.type = "button";
+        play.className = "post-play";
+        const playLabel = "Play " + (post.host || "listen");
+        play.textContent = playLabel;
+        function setLabel() {
+          play.textContent = voice.paused ? playLabel : "Pause";
         }
-      });
-      voice.addEventListener("play", setLabel);
-      voice.addEventListener("pause", setLabel);
-      voice.addEventListener("ended", setLabel);
+        play.addEventListener("click", () => {
+          if (voice.paused) {
+            voice.play().catch(() => {
+              play.textContent = playLabel;
+            });
+          } else {
+            voice.pause();
+          }
+        });
+        voice.addEventListener("play", setLabel);
+        voice.addEventListener("pause", setLabel);
+        voice.addEventListener("ended", setLabel);
+        body.append(voice, play);
+      } else {
+        visual = document.createElement("video");
+        visual.controls = true;
+        visual.preload = "metadata";
+        visual.playsInline = true;
+        if (post.image) visual.poster = post.image;
+        visual.src = post.episode;
+      }
       const title = document.createElement("h3");
       title.textContent = post.title;
       const date = document.createElement("p");
@@ -70,8 +81,8 @@
       date.textContent = post.host + " · " + post.date;
       const copy = document.createElement("p");
       copy.textContent = post.caption;
-      body.append(voice, play, title, date, copy);
-      article.append(still, body);
+      body.append(title, date, copy);
+      article.append(visual, body);
       return article;
     }
 
@@ -86,7 +97,7 @@
           return;
         }
         posts.forEach((post) => list.append(card(post)));
-        note.textContent = "Educational only. Not medical advice. A new day is one folder under daily/posts/ and one object at the top of posts.json and news.json.";
+        note.textContent = "Educational only. Not medical advice. Newest first. Older issues stay in this list.";
       })
       .catch(() => {
         note.textContent = "The post list did not load.";
