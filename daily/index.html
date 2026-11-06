@@ -34,11 +34,13 @@
     function card(post) {
       const article = document.createElement("article");
       article.className = "post-card";
-      const video = document.createElement("video");
-      video.controls = true;
-      video.preload = "metadata";
-      video.poster = post.image;
-      video.src = post.episode;
+      const still = document.createElement("img");
+      still.src = post.image;
+      still.alt = post.title;
+      const voice = document.createElement("audio");
+      voice.controls = true;
+      voice.preload = "auto";
+      voice.src = post.audio || post.episode;
       const body = document.createElement("div");
       body.className = "post-body";
       const play = document.createElement("button");
@@ -47,20 +49,20 @@
       const playLabel = "Play " + post.host;
       play.textContent = playLabel;
       function setLabel() {
-        play.textContent = video.paused ? playLabel : "Pause";
+        play.textContent = voice.paused ? playLabel : "Pause";
       }
       play.addEventListener("click", () => {
-        if (video.paused) {
-          video.play().catch(() => {
+        if (voice.paused) {
+          voice.play().catch(() => {
             play.textContent = playLabel;
           });
         } else {
-          video.pause();
+          voice.pause();
         }
       });
-      video.addEventListener("play", setLabel);
-      video.addEventListener("pause", setLabel);
-      video.addEventListener("ended", setLabel);
+      voice.addEventListener("play", setLabel);
+      voice.addEventListener("pause", setLabel);
+      voice.addEventListener("ended", setLabel);
       const title = document.createElement("h3");
       title.textContent = post.title;
       const date = document.createElement("p");
@@ -68,8 +70,8 @@
       date.textContent = post.host + " · " + post.date;
       const copy = document.createElement("p");
       copy.textContent = post.caption;
-      body.append(play, title, date, copy);
-      article.append(video, body);
+      body.append(voice, play, title, date, copy);
+      article.append(still, body);
       return article;
     }
 

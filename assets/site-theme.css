@@ -402,6 +402,12 @@ main.legal-doc strong {
   padding: 1.1rem 1.25rem 1.25rem;
 }
 
+.post-card audio {
+  display: block;
+  width: 100%;
+  margin: 0 0 0.85rem;
+}
+
 .post-play {
   display: inline-flex;
   margin: 0 0 0.85rem;
