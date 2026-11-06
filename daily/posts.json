@@ -13,18 +13,18 @@
     "id": "curations-set-b-2026-04-24",
     "date": "April 24, 2026",
     "host": "Daily issue",
-    "title": "5 curated posts · Set B",
+    "title": "5 curated posts \u00b7 Set B",
     "caption": "Same news clip as Set A. Educational only. Not medical advice.",
-    "image": "https://i.imgur.com/0fK9vL2.png",
-    "episode": "https://ixsb2s4ac33ctdahs7tzdgms2l72zurtpxjjghl2ptl5wmkl43da.turbo-gateway.com/ReQdS4AW9imMB5fnkZmS0v-s0jN90pMdenzX2zFL5sY"
+    "image": "posts/archive-news-clip/poster.jpg",
+    "episode": "posts/archive-news-clip/clip.mp4"
   },
   {
     "id": "curations-set-a-2026-04-23",
     "date": "April 23, 2026",
     "host": "Daily issue",
-    "title": "5 curated posts · Set A",
+    "title": "5 curated posts \u00b7 Set A",
     "caption": "News clip for the daily issue. Educational only. Not medical advice.",
-    "image": "https://i.imgur.com/0fK9vL2.png",
-    "episode": "https://ixsb2s4ac33ctdahs7tzdgms2l72zurtpxjjghl2ptl5wmkl43da.turbo-gateway.com/ReQdS4AW9imMB5fnkZmS0v-s0jN90pMdenzX2zFL5sY"
+    "image": "posts/archive-news-clip/poster.jpg",
+    "episode": "posts/archive-news-clip/clip.mp4"
   }
 ]
