@@ -10,21 +10,11 @@
     "episode": "posts/2026-11-05/episode.mp4"
   },
   {
-    "id": "curations-set-b-2026-04-24",
-    "date": "April 24, 2026",
+    "id": "archive-news-clip-2026-04",
+    "date": "April 23–24, 2026",
     "host": "Daily issue",
-    "title": "5 curated posts \u00b7 Set B",
-    "caption": "Same news clip as Set A. Educational only. Not medical advice.",
-    "image": "posts/archive-news-clip/poster.jpg",
-    "episode": "posts/archive-news-clip/clip.mp4"
-  },
-  {
-    "id": "curations-set-a-2026-04-23",
-    "date": "April 23, 2026",
-    "host": "Daily issue",
-    "title": "5 curated posts \u00b7 Set A",
-    "caption": "News clip for the daily issue. Educational only. Not medical advice.",
-    "image": "posts/archive-news-clip/poster.jpg",
+    "title": "News clip",
+    "caption": "One clip for the April issues. Educational only. Not medical advice.",
     "episode": "posts/archive-news-clip/clip.mp4"
   }
 ]

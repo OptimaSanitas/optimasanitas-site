@@ -398,6 +398,11 @@ main.legal-doc strong {
   background: #000;
 }
 
+.post-card video {
+  width: min(100%, 28rem);
+  margin-inline: auto;
+}
+
 .post-card .post-body {
   padding: 1.1rem 1.25rem 1.25rem;
 }
