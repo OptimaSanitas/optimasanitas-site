@@ -15,6 +15,7 @@
     "host": "Daily issue",
     "title": "News clip",
     "caption": "One clip for the April issues. Educational only. Not medical advice.",
-    "episode": "posts/archive-news-clip/clip.mp4"
+    "image": "posts/archive-news-clip/poster.jpg",
+    "episode": "posts/archive-news-clip/news-clip.mp4"
   }
 ]

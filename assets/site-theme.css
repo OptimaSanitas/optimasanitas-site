@@ -399,8 +399,11 @@ main.legal-doc strong {
 }
 
 .post-card video {
-  width: min(100%, 28rem);
+  width: min(100%, 22rem);
+  aspect-ratio: 464 / 688;
+  object-fit: contain;
   margin-inline: auto;
+  background: #000;
 }
 
 .post-card .post-body {

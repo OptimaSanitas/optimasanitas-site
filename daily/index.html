@@ -71,6 +71,7 @@
         visual.controls = true;
         visual.preload = "auto";
         visual.playsInline = true;
+        if (post.image) visual.poster = post.image;
         visual.src = post.episode;
       }
       const title = document.createElement("h3");
