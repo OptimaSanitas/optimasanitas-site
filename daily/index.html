@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Optima Sanitas daily posts. The still is for X. The voice plays here and in the app." />
+  <title>Optima Sanitas — Daily</title>
+  <link rel="icon" href="../assets/brand-icon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="../assets/brand-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="canonical" href="https://optimasanitas.com/daily/" />
+  <link rel="stylesheet" href="../assets/site-theme.css" />
+</head>
+<body>
+  <div class="shell">
+    <header class="hero hero--compact">
+      <a href="../index.html" class="logo-wrap" aria-label="Optima Sanitas home">
+        <img src="../assets/brand-icon.png" width="96" height="96" alt="" decoding="async" />
+      </a>
+      <p class="brand-home"><a href="../index.html">Optima Sanitas</a></p>
+      <p class="tagline tagline--compact">Newest first. X gets the still. This page plays Alex or Zoe.</p>
+    </header>
+
+    <h2 class="section-title">Posts</h2>
+    <div id="posts" class="post-list" aria-live="polite"></div>
+    <p class="wellness-note" id="posts-note">Loading posts.</p>
+  </div>
+  <script>
+    const list = document.getElementById("posts");
+    const note = document.getElementById("posts-note");
+
+    function card(post) {
+      const article = document.createElement("article");
+      article.className = "post-card";
+      const video = document.createElement("video");
+      video.controls = true;
+      video.preload = "metadata";
+      video.poster = post.image;
+      video.src = post.episode;
+      const body = document.createElement("div");
+      body.className = "post-body";
+      const title = document.createElement("h3");
+      title.textContent = post.title;
+      const date = document.createElement("p");
+      date.className = "post-date";
+      date.textContent = post.host + " · " + post.date;
+      const copy = document.createElement("p");
+      copy.textContent = post.caption;
+      body.append(title, date, copy);
+      article.append(video, body);
+      return article;
+    }
+
+    fetch("posts.json")
+      .then((res) => {
+        if (!res.ok) throw new Error("posts.json " + res.status);
+        return res.json();
+      })
+      .then((posts) => {
+        if (!Array.isArray(posts) || posts.length === 0) {
+          note.textContent = "No posts yet.";
+          return;
+        }
+        posts.forEach((post) => list.append(card(post)));
+        note.textContent = "Educational only. Not medical advice. A new day is one folder under daily/posts/ and one object at the top of posts.json and news.json.";
+      })
+      .catch(() => {
+        note.textContent = "The post list did not load.";
+      });
+  </script>
+</body>
+</html>
