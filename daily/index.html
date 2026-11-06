@@ -86,7 +86,7 @@
       return article;
     }
 
-    fetch("posts.json")
+    fetch("posts.json", { cache: "no-store" })
       .then((res) => {
         if (!res.ok) throw new Error("posts.json " + res.status);
         return res.json();
