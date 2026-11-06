@@ -41,6 +41,26 @@
       video.src = post.episode;
       const body = document.createElement("div");
       body.className = "post-body";
+      const play = document.createElement("button");
+      play.type = "button";
+      play.className = "post-play";
+      const playLabel = "Play " + post.host;
+      play.textContent = playLabel;
+      function setLabel() {
+        play.textContent = video.paused ? playLabel : "Pause";
+      }
+      play.addEventListener("click", () => {
+        if (video.paused) {
+          video.play().catch(() => {
+            play.textContent = playLabel;
+          });
+        } else {
+          video.pause();
+        }
+      });
+      video.addEventListener("play", setLabel);
+      video.addEventListener("pause", setLabel);
+      video.addEventListener("ended", setLabel);
       const title = document.createElement("h3");
       title.textContent = post.title;
       const date = document.createElement("p");
@@ -48,7 +68,7 @@
       date.textContent = post.host + " · " + post.date;
       const copy = document.createElement("p");
       copy.textContent = post.caption;
-      body.append(title, date, copy);
+      body.append(play, title, date, copy);
       article.append(video, body);
       return article;
     }
