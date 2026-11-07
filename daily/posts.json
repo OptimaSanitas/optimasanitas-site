@@ -1,5 +1,15 @@
 [
   {
+    "id": "2026-11-06-winter-sun",
+    "date": "November 6, 2026",
+    "host": "Zoe and Alex",
+    "title": "A short visit",
+    "caption": "Zoe: The cold sand, and a shorter day. I am still out here like the dune owes me July. Alex: The warm sun owes you a short visit. Twenty or thirty minutes outside even with clouds. In winter, nobody gets a fixed fifteen minutes.",
+    "image": "posts/2026-11-06/still.jpg",
+    "audio": "posts/2026-11-06/voice.mp3",
+    "episode": "posts/2026-11-06/episode.mp4"
+  },
+  {
     "id": "2026-11-05-easy-pace",
     "date": "November 5, 2026",
     "host": "Zoe",
