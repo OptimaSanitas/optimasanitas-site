@@ -1,5 +1,31 @@
 [
   {
+    "id": "sanitas-2026-11-08-sprint-interval",
+    "timestamp": 1794168000,
+    "date": "November 8, 2026",
+    "video_date": "November 8, 2026",
+    "title": "Low volume",
+    "content": "Zoe: Interval training today, low volume, just to get out there. Here is an article.",
+    "post_urls": [],
+    "post_ids": [],
+    "video_url": "https://optimasanitas.com/daily/posts/2026-11-08/episode.mp4",
+    "video_tag": "running",
+    "workout_title": "Daily issue · November 8",
+    "health_review_title": "Low volume · Nov 8",
+    "health_review_body": "Zoe: Interval training today, low volume, just to get out there. Here is an article.",
+    "persona_image_url": "https://optimasanitas.com/daily/posts/2026-11-08/still.jpg",
+    "further_reading": [
+      {
+        "label": "Scandinavian Journal of Medicine & Science in Sports",
+        "url": "https://doi.org/10.1111/sms.70130"
+      },
+      {
+        "label": "This listen on optimasanitas.com",
+        "url": "https://optimasanitas.com/daily/"
+      }
+    ]
+  },
+  {
     "id": "sanitas-2026-11-07-garlic-rows",
     "timestamp": 1794081600,
     "date": "November 7, 2026",

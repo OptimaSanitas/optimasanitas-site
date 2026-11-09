@@ -94,6 +94,15 @@
       const copy = document.createElement("p");
       copy.textContent = post.caption;
       body.append(title, date, copy);
+      if (post.link && post.link.url) {
+        const source = document.createElement("a");
+        source.className = "post-source";
+        source.href = post.link.url;
+        source.target = "_blank";
+        source.rel = "noopener noreferrer";
+        source.textContent = post.link.label || post.link.url;
+        body.append(source);
+      }
       article.append(visual, body);
       return article;
     }

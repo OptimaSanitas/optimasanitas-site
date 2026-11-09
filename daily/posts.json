@@ -1,5 +1,19 @@
 [
   {
+    "id": "2026-11-08-sprint-interval",
+    "date": "November 8, 2026",
+    "host": "Zoe",
+    "title": "Low volume",
+    "caption": "Zoe: Interval training today, low volume, just to get out there. Here is an article.",
+    "image": "posts/2026-11-08/still.jpg",
+    "audio": "posts/2026-11-08/voice.mp3",
+    "episode": "posts/2026-11-08/episode.mp4",
+    "link": {
+      "label": "Scandinavian Journal of Medicine & Science in Sports",
+      "url": "https://doi.org/10.1111/sms.70130"
+    }
+  },
+  {
     "id": "2026-11-07-garlic-rows",
     "date": "November 7, 2026",
     "host": "Alex",

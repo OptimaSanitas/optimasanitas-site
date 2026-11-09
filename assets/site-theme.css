@@ -456,6 +456,12 @@ main.legal-doc strong {
   font-size: 0.98rem;
 }
 
+.post-card .post-source {
+  display: inline-block;
+  margin-top: 0.75rem;
+  color: var(--cyan);
+}
+
 /* Legal hub: stack of link cards */
 .legal-hub-grid {
   display: grid;
