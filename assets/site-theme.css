@@ -456,6 +456,11 @@ main.legal-doc strong {
   font-size: 0.98rem;
 }
 
+.post-card .post-copy {
+  white-space: pre-line;
+  line-height: 1.5;
+}
+
 .post-card .post-source {
   display: inline-block;
   margin-top: 0.75rem;

@@ -1,5 +1,31 @@
 [
   {
+    "id": "sanitas-2026-11-09-burpee-interval",
+    "timestamp": 1794254400,
+    "date": "November 9, 2026",
+    "video_date": "November 9, 2026",
+    "title": "That dunk",
+    "content": "Alex: \"Hey Bryan, looking forward to that dunk. Burpee intervals may help you reach it. Check out the article.\"\n@bryan_johnson",
+    "post_urls": [],
+    "post_ids": [],
+    "video_url": "https://optimasanitas.com/daily/posts/2026-11-09/episode.mp4",
+    "video_tag": "gym",
+    "workout_title": "Daily issue · November 9",
+    "health_review_title": "That dunk · Nov 9",
+    "health_review_body": "Alex: \"Hey Bryan, looking forward to that dunk. Burpee intervals may help you reach it. Check out the article.\"\n@bryan_johnson",
+    "persona_image_url": "https://optimasanitas.com/daily/posts/2026-11-09/still.jpg",
+    "further_reading": [
+      {
+        "label": "doi.org/10.1519/jsc.0000000000004603",
+        "url": "https://doi.org/10.1519/jsc.0000000000004603"
+      },
+      {
+        "label": "This listen on optimasanitas.com",
+        "url": "https://optimasanitas.com/daily/"
+      }
+    ]
+  },
+  {
     "id": "sanitas-2026-11-08-sprint-interval",
     "timestamp": 1794168000,
     "date": "November 8, 2026",
