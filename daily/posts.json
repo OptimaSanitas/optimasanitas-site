@@ -1,5 +1,19 @@
 [
   {
+    "id": "2026-11-10-soccer",
+    "date": "November 10, 2026",
+    "host": "Zoe",
+    "title": "Three times a week",
+    "caption": "Zoe: \"Not everything is about muscle mass. Soccer three times a week advances fitness levels. Link below for more information.\"",
+    "image": "posts/2026-11-10/still.jpg",
+    "audio": "posts/2026-11-10/voice.mp3",
+    "episode": "posts/2026-11-10/episode.mp4",
+    "link": {
+      "label": "Scandinavian Journal of Medicine & Science in Sports",
+      "url": "https://doi.org/10.1111/sms.70393"
+    }
+  },
+  {
     "id": "2026-11-09-burpee-interval",
     "date": "November 9, 2026",
     "host": "Alex",

@@ -1,5 +1,31 @@
 [
   {
+    "id": "sanitas-2026-11-10-soccer",
+    "timestamp": 1794340800,
+    "date": "November 10, 2026",
+    "video_date": "November 10, 2026",
+    "title": "Three times a week",
+    "content": "Zoe: \"Not everything is about muscle mass. Soccer three times a week advances fitness levels. Link below for more information.\"",
+    "post_urls": [],
+    "post_ids": [],
+    "video_url": "https://optimasanitas.com/daily/posts/2026-11-10/episode.mp4",
+    "video_tag": "soccer",
+    "workout_title": "Daily issue · November 10",
+    "health_review_title": "Three times a week · Nov 10",
+    "health_review_body": "Zoe: \"Not everything is about muscle mass. Soccer three times a week advances fitness levels. Link below for more information.\"",
+    "persona_image_url": "https://optimasanitas.com/daily/posts/2026-11-10/still.jpg",
+    "further_reading": [
+      {
+        "label": "Scandinavian Journal of Medicine & Science in Sports",
+        "url": "https://doi.org/10.1111/sms.70393"
+      },
+      {
+        "label": "This listen on optimasanitas.com",
+        "url": "https://optimasanitas.com/daily/"
+      }
+    ]
+  },
+  {
     "id": "sanitas-2026-11-09-burpee-interval",
     "timestamp": 1794254400,
     "date": "November 9, 2026",
