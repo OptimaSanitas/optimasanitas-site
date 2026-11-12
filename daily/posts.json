@@ -1,5 +1,19 @@
 [
   {
+    "id": "2026-11-11-pullups",
+    "date": "November 11, 2026",
+    "host": "Alex",
+    "title": "A favorite",
+    "caption": "Alex: \"Pullups are one of my favorite exercises, great for upper body strengthening and muscle endurance. Check out the study below.\"",
+    "image": "posts/2026-11-11/still.jpg",
+    "audio": "posts/2026-11-11/voice.mp3",
+    "episode": "posts/2026-11-11/episode.mp4",
+    "link": {
+      "label": "doi.org/10.3390/sports13120433",
+      "url": "https://doi.org/10.3390/sports13120433"
+    }
+  },
+  {
     "id": "2026-11-10-soccer",
     "date": "November 10, 2026",
     "host": "Zoe",
