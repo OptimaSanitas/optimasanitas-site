@@ -1,5 +1,19 @@
 [
   {
+    "id": "2026-11-12-swim",
+    "date": "November 12, 2026",
+    "host": "Zoe",
+    "title": "Warm waters",
+    "caption": "Zoe: \"Have you swum in the warm waters of Hawaii? I recommend it. Swim training three days a week raised treadmill fitness about twenty-five percent, close to the running group's 28%. Check out the study below.\"",
+    "image": "posts/2026-11-12/still.jpg",
+    "audio": "posts/2026-11-12/voice.mp3",
+    "episode": "posts/2026-11-12/episode.mp4",
+    "link": {
+      "label": "doi.org/10.1249/00005768-198912000-00005",
+      "url": "https://doi.org/10.1249/00005768-198912000-00005"
+    }
+  },
+  {
     "id": "2026-11-11-pullups",
     "date": "November 11, 2026",
     "host": "Alex",

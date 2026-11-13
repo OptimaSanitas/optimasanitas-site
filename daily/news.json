@@ -1,5 +1,31 @@
 [
   {
+    "id": "sanitas-2026-11-12-swim",
+    "timestamp": 1794513600,
+    "date": "November 12, 2026",
+    "video_date": "November 12, 2026",
+    "title": "Warm waters",
+    "content": "Zoe: \"Have you swum in the warm waters of Hawaii? I recommend it. Swim training three days a week raised treadmill fitness about twenty-five percent, close to the running group's 28%. Check out the study below.\"",
+    "post_urls": [],
+    "post_ids": [],
+    "video_url": "https://optimasanitas.com/daily/posts/2026-11-12/episode.mp4",
+    "video_tag": "swim",
+    "workout_title": "Daily issue · November 12",
+    "health_review_title": "Warm waters · Nov 12",
+    "health_review_body": "Zoe: \"Have you swum in the warm waters of Hawaii? I recommend it. Swim training three days a week raised treadmill fitness about twenty-five percent, close to the running group's 28%. Check out the study below.\"",
+    "persona_image_url": "https://optimasanitas.com/daily/posts/2026-11-12/still.jpg",
+    "further_reading": [
+      {
+        "label": "doi.org/10.1249/00005768-198912000-00005",
+        "url": "https://doi.org/10.1249/00005768-198912000-00005"
+      },
+      {
+        "label": "This listen on optimasanitas.com",
+        "url": "https://optimasanitas.com/daily/"
+      }
+    ]
+  },
+  {
     "id": "sanitas-2026-11-11-pullups",
     "timestamp": 1794427200,
     "date": "November 11, 2026",
