@@ -1,5 +1,31 @@
 [
   {
+    "id": "sanitas-2026-11-13-meal",
+    "timestamp": 1794600000,
+    "date": "November 13, 2026",
+    "video_date": "November 13, 2026",
+    "title": "Before or after",
+    "content": "Alex: \"Zoe, do you like to eat before or after a workout? I like after.\"\n\nZoe: \"I don't like to work out hungry, so I eat before. A study showed the leg press gained a little more when people ate first. The chest press did not.\"",
+    "post_urls": [],
+    "post_ids": [],
+    "video_url": "https://optimasanitas.com/daily/posts/2026-11-13/episode.mp4",
+    "video_tag": "meal",
+    "workout_title": "Daily issue · November 13",
+    "health_review_title": "Before or after · Nov 13",
+    "health_review_body": "Alex: \"Zoe, do you like to eat before or after a workout? I like after.\"\n\nZoe: \"I don't like to work out hungry, so I eat before. A study showed the leg press gained a little more when people ate first. The chest press did not.\"",
+    "persona_image_url": "https://optimasanitas.com/daily/posts/2026-11-13/still.jpg",
+    "further_reading": [
+      {
+        "label": "doi.org/10.3390/nu17132070",
+        "url": "https://doi.org/10.3390/nu17132070"
+      },
+      {
+        "label": "This listen on optimasanitas.com",
+        "url": "https://optimasanitas.com/daily/"
+      }
+    ]
+  },
+  {
     "id": "sanitas-2026-11-12-swim",
     "timestamp": 1794513600,
     "date": "November 12, 2026",

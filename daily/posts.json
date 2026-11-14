@@ -1,5 +1,19 @@
 [
   {
+    "id": "2026-11-13-meal",
+    "date": "November 13, 2026",
+    "host": "Alex and Zoe",
+    "title": "Before or after",
+    "caption": "Alex: \"Zoe, do you like to eat before or after a workout? I like after.\"\n\nZoe: \"I don't like to work out hungry, so I eat before. A study showed the leg press gained a little more when people ate first. The chest press did not.\"",
+    "image": "posts/2026-11-13/still.jpg",
+    "audio": "posts/2026-11-13/voice.mp3",
+    "episode": "posts/2026-11-13/episode.mp4",
+    "link": {
+      "label": "doi.org/10.3390/nu17132070",
+      "url": "https://doi.org/10.3390/nu17132070"
+    }
+  },
+  {
     "id": "2026-11-12-swim",
     "date": "November 12, 2026",
     "host": "Zoe",
