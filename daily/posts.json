@@ -1,5 +1,19 @@
 [
   {
+    "id": "2026-11-14-lab",
+    "date": "November 14, 2026",
+    "host": "Alex",
+    "title": "Whole-body",
+    "caption": "Alex: \"Whole-body rejuvenation. Sinclair says his lab has it working in mice. There is no paper on the mice yet, and no date for people. Thursday's preprint says each cell type takes the reset differently. Check it below.\"",
+    "image": "posts/2026-11-14/still.jpg",
+    "audio": "posts/2026-11-14/voice.mp3",
+    "episode": "posts/2026-11-14/episode.mp4",
+    "link": {
+      "label": "doi.org/10.64898/2026.11.09.764947",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.09.764947"
+    }
+  },
+  {
     "id": "2026-11-13-meal",
     "date": "November 13, 2026",
     "host": "Alex and Zoe",
