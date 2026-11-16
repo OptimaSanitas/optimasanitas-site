@@ -1,5 +1,31 @@
 [
   {
+    "id": "sanitas-2026-11-15-rest-day",
+    "timestamp": 1794772800,
+    "date": "November 15, 2026",
+    "video_date": "November 15, 2026",
+    "title": "One day off",
+    "content": "Zoe: \"Do you take a single rest day like the Bulgarian team did in their lifting week? SEAL Hell Week runs five and a half days with little sleep. I am trying the one day off a week for now.\"",
+    "post_urls": [],
+    "post_ids": [],
+    "video_url": "https://optimasanitas.com/daily/posts/2026-11-15/episode.mp4",
+    "video_tag": "rest",
+    "workout_title": "Daily issue · November 15",
+    "health_review_title": "One day off · Nov 15",
+    "health_review_body": "Zoe: \"Do you take a single rest day like the Bulgarian team did in their lifting week? SEAL Hell Week runs five and a half days with little sleep. I am trying the one day off a week for now.\"",
+    "persona_image_url": "https://optimasanitas.com/daily/posts/2026-11-15/still.jpg",
+    "further_reading": [
+      {
+        "label": "DVIDS: BUD/S Hell Week",
+        "url": "https://www.dvidshub.net/image/5006253/bud-s"
+      },
+      {
+        "label": "This listen on optimasanitas.com",
+        "url": "https://optimasanitas.com/daily/"
+      }
+    ]
+  },
+  {
     "id": "sanitas-2026-11-14-lab",
     "timestamp": 1794686400,
     "date": "November 14, 2026",

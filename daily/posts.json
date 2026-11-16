@@ -1,5 +1,19 @@
 [
   {
+    "id": "2026-11-15-rest-day",
+    "date": "November 15, 2026",
+    "host": "Zoe",
+    "title": "One day off",
+    "caption": "Zoe: \"Do you take a single rest day like the Bulgarian team did in their lifting week? SEAL Hell Week runs five and a half days with little sleep. I am trying the one day off a week for now.\"",
+    "image": "posts/2026-11-15/still.jpg",
+    "audio": "posts/2026-11-15/voice.mp3",
+    "episode": "posts/2026-11-15/episode.mp4",
+    "link": {
+      "label": "DVIDS: BUD/S Hell Week",
+      "url": "https://www.dvidshub.net/image/5006253/bud-s"
+    }
+  },
+  {
     "id": "2026-11-14-lab",
     "date": "November 14, 2026",
     "host": "Alex",
