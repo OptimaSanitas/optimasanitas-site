@@ -1,5 +1,31 @@
 [
   {
+    "id": "sanitas-2026-11-16-trail",
+    "timestamp": 1794859200,
+    "date": "November 16, 2026",
+    "video_date": "November 16, 2026",
+    "title": "In the forest",
+    "content": "Alex: \"I enjoy trail running versus road. In the forest feels more rewarding. Eight weeks of either helps balance for new runners. The study below shows the trail group did better on a standing balance test, though that difference was not significant.\"",
+    "post_urls": [],
+    "post_ids": [],
+    "video_url": "https://optimasanitas.com/daily/posts/2026-11-16/episode.mp4",
+    "video_tag": "trail",
+    "workout_title": "Daily issue · November 16",
+    "health_review_title": "In the forest · Nov 16",
+    "health_review_body": "Alex: \"I enjoy trail running versus road. In the forest feels more rewarding. Eight weeks of either helps balance for new runners. The study below shows the trail group did better on a standing balance test, though that difference was not significant.\"",
+    "persona_image_url": "https://optimasanitas.com/daily/posts/2026-11-16/still.jpg",
+    "further_reading": [
+      {
+        "label": "doi.org/10.3390/ijerph20054501",
+        "url": "https://doi.org/10.3390/ijerph20054501"
+      },
+      {
+        "label": "This listen on optimasanitas.com",
+        "url": "https://optimasanitas.com/daily/"
+      }
+    ]
+  },
+  {
     "id": "sanitas-2026-11-15-rest-day",
     "timestamp": 1794772800,
     "date": "November 15, 2026",

@@ -1,5 +1,19 @@
 [
   {
+    "id": "2026-11-16-trail",
+    "date": "November 16, 2026",
+    "host": "Alex",
+    "title": "In the forest",
+    "caption": "Alex: \"I enjoy trail running versus road. In the forest feels more rewarding. Eight weeks of either helps balance for new runners. The study below shows the trail group did better on a standing balance test, though that difference was not significant.\"",
+    "image": "posts/2026-11-16/still.jpg",
+    "audio": "posts/2026-11-16/voice.mp3",
+    "episode": "posts/2026-11-16/episode.mp4",
+    "link": {
+      "label": "doi.org/10.3390/ijerph20054501",
+      "url": "https://doi.org/10.3390/ijerph20054501"
+    }
+  },
+  {
     "id": "2026-11-15-rest-day",
     "date": "November 15, 2026",
     "host": "Zoe",
