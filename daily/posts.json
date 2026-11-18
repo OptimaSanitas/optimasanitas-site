@@ -1,5 +1,19 @@
 [
   {
+    "id": "2026-11-17-sourdough",
+    "date": "November 17, 2026",
+    "host": "Zoe",
+    "title": "Long ferment",
+    "caption": "Zoe: \"When I make bread I give the dough a long ferment. In one study, a day of sourdough cleared the phytate, and women absorbed about three times as much iron from that meal. Check the study below.\"",
+    "image": "posts/2026-11-17/still.jpg",
+    "audio": "posts/2026-11-17/voice.mp3",
+    "episode": "posts/2026-11-17/episode.mp4",
+    "link": {
+      "label": "doi.org/10.3390/nu17243891",
+      "url": "https://doi.org/10.3390/nu17243891"
+    }
+  },
+  {
     "id": "2026-11-16-trail",
     "date": "November 16, 2026",
     "host": "Alex",
