@@ -1,5 +1,31 @@
 [
   {
+    "id": "sanitas-2026-11-18-lymph",
+    "timestamp": 1795032000,
+    "date": "November 18, 2026",
+    "video_date": "November 18, 2026",
+    "title": "Slow traffic",
+    "content": "Alex: \"A sedentary life does not fill your lymph nodes with waste. It just slows the traffic, so fluid can sit in the legs. In one run, fluid left the thigh about five times faster in the first fifteen minutes. Check the study below.\"",
+    "post_urls": [],
+    "post_ids": [],
+    "video_url": "https://optimasanitas.com/daily/posts/2026-11-18/episode.mp4",
+    "video_tag": "lymph",
+    "workout_title": "Daily issue · November 18",
+    "health_review_title": "Slow traffic · Nov 18",
+    "health_review_body": "Alex: \"A sedentary life does not fill your lymph nodes with waste. It just slows the traffic, so fluid can sit in the legs. In one run, fluid left the thigh about five times faster in the first fifteen minutes. Check the study below.\"",
+    "persona_image_url": "https://optimasanitas.com/daily/posts/2026-11-18/still.jpg",
+    "further_reading": [
+      {
+        "label": "doi.org/10.1017/s095806700002042x",
+        "url": "https://doi.org/10.1017/s095806700002042x"
+      },
+      {
+        "label": "This listen on optimasanitas.com",
+        "url": "https://optimasanitas.com/daily/"
+      }
+    ]
+  },
+  {
     "id": "sanitas-2026-11-17-sourdough",
     "timestamp": 1794945600,
     "date": "November 17, 2026",

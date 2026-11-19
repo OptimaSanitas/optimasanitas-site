@@ -1,5 +1,19 @@
 [
   {
+    "id": "2026-11-18-lymph",
+    "date": "November 18, 2026",
+    "host": "Alex",
+    "title": "Slow traffic",
+    "caption": "Alex: \"A sedentary life does not fill your lymph nodes with waste. It just slows the traffic, so fluid can sit in the legs. In one run, fluid left the thigh about five times faster in the first fifteen minutes. Check the study below.\"",
+    "image": "posts/2026-11-18/still.jpg",
+    "audio": "posts/2026-11-18/voice.mp3",
+    "episode": "posts/2026-11-18/episode.mp4",
+    "link": {
+      "label": "doi.org/10.1017/s095806700002042x",
+      "url": "https://doi.org/10.1017/s095806700002042x"
+    }
+  },
+  {
     "id": "2026-11-17-sourdough",
     "date": "November 17, 2026",
     "host": "Zoe",
