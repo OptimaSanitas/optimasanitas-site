@@ -1,5 +1,19 @@
 [
   {
+    "id": "2026-11-19-strength",
+    "date": "November 19, 2026",
+    "host": "Zoe",
+    "title": "Four centimeters",
+    "caption": "Zoe: \"Adding hip thrusts feels great. One study matched the minutes for cardio, lifting, or both. The group that did both lost about four centimeters at the waist. Check the study below.\"",
+    "image": "posts/2026-11-19/still.jpg",
+    "audio": "posts/2026-11-19/voice.mp3",
+    "episode": "posts/2026-11-19/episode.mp4",
+    "link": {
+      "label": "doi.org/10.1002/osp4.749",
+      "url": "https://doi.org/10.1002/osp4.749"
+    }
+  },
+  {
     "id": "2026-11-18-lymph",
     "date": "November 18, 2026",
     "host": "Alex",

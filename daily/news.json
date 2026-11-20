@@ -1,5 +1,31 @@
 [
   {
+    "id": "sanitas-2026-11-19-strength",
+    "timestamp": 1795118400,
+    "date": "November 19, 2026",
+    "video_date": "November 19, 2026",
+    "title": "Four centimeters",
+    "content": "Zoe: \"Adding hip thrusts feels great. One study matched the minutes for cardio, lifting, or both. The group that did both lost about four centimeters at the waist. Check the study below.\"",
+    "post_urls": [],
+    "post_ids": [],
+    "video_url": "https://optimasanitas.com/daily/posts/2026-11-19/episode.mp4",
+    "video_tag": "lift",
+    "workout_title": "Daily issue · November 19",
+    "health_review_title": "Four centimeters · Nov 19",
+    "health_review_body": "Zoe: \"Adding hip thrusts feels great. One study matched the minutes for cardio, lifting, or both. The group that did both lost about four centimeters at the waist. Check the study below.\"",
+    "persona_image_url": "https://optimasanitas.com/daily/posts/2026-11-19/still.jpg",
+    "further_reading": [
+      {
+        "label": "doi.org/10.1002/osp4.749",
+        "url": "https://doi.org/10.1002/osp4.749"
+      },
+      {
+        "label": "This listen on optimasanitas.com",
+        "url": "https://optimasanitas.com/daily/"
+      }
+    ]
+  },
+  {
     "id": "sanitas-2026-11-18-lymph",
     "timestamp": 1795032000,
     "date": "November 18, 2026",
