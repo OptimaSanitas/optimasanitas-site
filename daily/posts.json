@@ -1,16 +1,4 @@
 [
-    {
-    "id": "2026-11-20-partner",
-    "date": "November 20, 2026",
-    "host": "Alex and Zoe",
-    "title": "Virtual Partner",
-    "caption": Alex: \"Working out with a stronger partner can increase your efforts, even with a virtual partner."\n\nZoe: \"Yes, this is caller the Köhler Effect. I can be your partner. Check out the study below.\"",
-    "image": "posts/2026-11-20/Alex_Zoe.png",
-    "link": {
-      "label": "doi.org/10.1037/0022-3514.79.4.580",
-      "url": "https://doi.org/10.1037/0022-3514.79.4.580"
-    }
-  },
   {
     "id": "2026-11-19-strength",
     "date": "November 19, 2026",
